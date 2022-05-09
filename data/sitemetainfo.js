@@ -22,9 +22,9 @@ const siteMetaInfo = {
   githubUser: "edd34",
   twitter: "#",
   twitter_user: "#",
-  stackoverflow: "#",
-  youtube: "#",
-  linkedin: "#",
+  stackoverflow: "https://stackoverflow.com/users/9127197/edd34",
+  youtube: "https://www.youtube.com/channel/UC_ll5CLLIAgAX4pbEd7OoqQ/featured",
+  linkedin: "https://www.linkedin.com/in/eddineomar/",
 };
 
 export default siteMetaInfo;
