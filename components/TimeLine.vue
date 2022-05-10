@@ -62,9 +62,9 @@
           >Janvier 2022 - Aujourd'hui</time
         >
         <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-          Cours sur Java orienté objet pour les BTS SIO 1ère année.
+          👉 Cours sur Java orienté objet pour les BTS SIO 1ère année.
           <br />
-          Titre professionnel REMN de niveau Bac+2 : Responsable d'Espace de
+          👉 Titre professionnel REMN de niveau Bac+2 : Responsable d'Espace de
           Médiation Numérique.
         </p>
       </li>
@@ -100,7 +100,7 @@
             dark:text-white
           "
         >
-          Mentor Python @ OpenClassRooms
+          Mentor DA Python @ OpenClassRooms
           <span
             class="
               bg-blue-100
@@ -129,11 +129,8 @@
           >2021 - Aujourd'hui</time
         >
         <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-          Mentor Openclassroom parcours développement d'applications en python,
-          j'aide les élèves dans leurs parcours d'apprentissage du langage
-          Python à l'aide de séance de mentorat.Mentor Openclassroom parcours
-          développement d'applications en python, j'aide les élèves dans leurs
-          parcours d'apprentissage du langage Python à l'aide de séance de
+          Formation Développeur d'Application Python, j'aide les élèves dans
+          leurs parcours d'apprentissage du langage Python à l'aide de séance de
           mentorat.
         </p>
       </li>
