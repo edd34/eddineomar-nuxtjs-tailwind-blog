@@ -1,7 +1,7 @@
 const siteMetaInfo = {
   title: "Eddine OMAR | Développeur freelance Python Django Flask + Vue",
   author: "Eddine OMAR",
-  author_image: "/author.png",
+  author_image: "/author.jpg",
   position: "🐍 Python/DevOps Software engineer👨‍💻 ⌨️",
   position2: "✨ Mentor @Openclassroom DA Python 🐍",
   position3: "💻 Formateur Java @CCI",
@@ -14,8 +14,8 @@ const siteMetaInfo = {
   theme: "system", // system, dark or light
   siteUrl: "https://eddineomar.fr",
   siteRepo: "#",
-  siteLogo: "../assets/author.png",
-  image: "~/assets/author.png",
+  siteLogo: "../assets/author.jpg",
+  image: "../assets/author.jpg",
   socialBanner: "/static/images/twitter-card.png",
   email: "contact@eddineomar.fr",
   github: "https://github.com/edd34",
