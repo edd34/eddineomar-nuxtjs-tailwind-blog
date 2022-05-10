@@ -22,14 +22,7 @@
           rel="noopener noreferrer"
           :href="`mailto:${siteMetadata.email}`"
           ><span class="sr-only">mail</span>
-          <img class="w-8 h-8" src="~assets/icon/mail.svg" /></a
-        ><a
-          class="text-sm text-gray-500 transition hover:text-gray-600"
-          target="_blank"
-          rel="noopener noreferrer"
-          :href="siteMetadata.facebook"
-          ><span class="sr-only">facebook</span>
-          <img class="w-8 h-8" src="~assets/icon/facebook.svg"
+          <img class="w-8 h-8" src="~assets/icon/mail.svg"
         /></a>
         <a
           class="text-sm text-gray-500 transition hover:text-gray-600"
@@ -54,7 +47,6 @@
           href="https://github.com/mdrathik/tailwind-nuxtjs-starter-blog"
         ></a>
       </div>
-      <BuyMeACoffee></BuyMeACoffee>
     </div>
   </footer>
 </template>
