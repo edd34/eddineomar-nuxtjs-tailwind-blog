@@ -1,11 +1,11 @@
 const siteMetadata = {
-  title: "Eddine OMAR | Développeur freelance Python Django Flask + Vue",
+  title: "Eddine OMAR | Développeur freelance Python",
   author: "Eddine OMAR",
   author_image: "/author.jpg",
-  position: "🐍 Python/DevOps Software engineer👨‍💻 ⌨️",
+  position: "🐍 Python/DevOps Software engineer 👨‍💻 ⌨️",
   position2: "✨ Mentor @Openclassroom DA Python 🐍",
   position3: "💻 Formateur Java @CCI",
-  location: "Paris, France",
+  location: "Mayotte",
   headerTitle: "Eddine OMAR",
   slogan: "Skills are cheap, Passion is priceless",
   description:
