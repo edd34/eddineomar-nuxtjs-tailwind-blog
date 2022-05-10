@@ -3,18 +3,23 @@
     <h2
       class="mt-6 text-4xl text-gray-700 font-bold capitalize dark:text-blue-200"
     >
-      👋 Hola , Good Day !
+      👋 Salut, Gégé !
     </h2>
-    <p class="mt-8 mb-4 dark:bg-gray-800 dark:text-blue-200 text-justify">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book. It has survived not only five centuries, but
-      also the leap into electronic typesetting, remaining essentially
-      unchanged. It was popularised in the 1960s with the release of Letraset
-      sheets containing Lorem Ipsum passages, and more recently with desktop
-      publishing software like Aldus PageMaker including versions of Lorem
-      Ipsum.
+    <br/>
+
+      <p class="text-justify">
+      Moi c'est Eddine, développeur freelance spécialisé en Python, enchanté.
+      <p/>
+
+      <br/>
+
+      <p class="text-justify">
+      Passionné de l'ingénierie logicielle, l'IT, la tech, l'Open Source, le business... mais aussi curieux, autodidacte, je me pousse souvent hors de ma zone de confort, attiré par une soif de connaissance insatiable. J'adore résoudre des problèmes techniques, j'ai l'amour du travail bien fait dans mon ADN. 
+      <p/>
+      <p class="text-justify">
+      Ma plus grande peur est de n'avoir rien à faire, rien à apprendre c'est pour cela que je complète mon emploi du temps avec des projets perso, ou de la veille sur les secteurs industriels ainsi que les tendances et technologies auxquelles je me projette.
+      <p/>
+      Au plaisir d'échanger. N'hésitez pas à parcours le blog en attendant.
     </p>
   </div>
 </template>
