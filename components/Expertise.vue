@@ -21,7 +21,35 @@
           <C class="h-10 w-10 rounded-sm drop-shadow-sm" />
         </li>
         <li class="flex items-center">
-          <Java class="h-10 w-10 rounded-sm drop-shadow-sm" />
+          <Cpp class="h-10 w-10 rounded-sm drop-shadow-sm" />
+        </li>
+      </ul>
+    </div>
+    <div class="mt-2">
+      <h2
+        class="
+          mb-2
+          text-xl text-gray-700
+          font-bold
+          dark:text-blue-200
+          capitalize
+        "
+      >
+        Bases de données
+      </h2>
+
+      <ul class="flex flex-wrap gap-4 items-center">
+        <li class="flex items-center">
+          <Mysql class="h-10 w-10 rounded-sm drop-shadow-sm" />
+        </li>
+        <li class="flex items-center">
+          <Mongodb class="h-10 w-10 rounded-sm drop-shadow-sm" />
+        </li>
+        <li class="flex items-center">
+          <Sqlite class="h-10 w-10 rounded-sm drop-shadow-sm" />
+        </li>
+        <li class="flex items-center">
+          <Postgresql class="h-10 w-10 rounded-sm drop-shadow-sm" />
         </li>
       </ul>
     </div>
@@ -84,6 +112,9 @@
         <li class="flex items-center">
           <Flask class="h-10 w-10" />
         </li>
+        <li class="flex items-center">
+          <Solidity class="h-10 w-10" />
+        </li>
       </ul>
     </div>
     <div class="mt-4">
@@ -108,6 +139,51 @@
         <li class="flex items-center">
           <Gitlab class="h-10 w-10" />
         </li>
+        <li class="flex items-center">
+          <Docker class="h-10 w-10" />
+        </li>
+        <li class="flex items-center">
+          <Linux class="h-10 w-10" />
+        </li>
+        <li class="flex items-center">
+          <Ubuntu class="h-10 w-10" />
+        </li>
+      </ul>
+    </div>
+    <div class="mt-4">
+      <h2
+        class="
+          mb-2
+          text-xl text-gray-700
+          font-bold
+          dark:text-blue-200
+          capitalize
+        "
+      >
+        Autre
+      </h2>
+      <ul class="mb-6 flex flex-wrap gap-4">
+        <li class="flex items-center">
+          <Vscode class="h-10 w-10" />
+        </li>
+        <li class="flex items-center">
+          <Markdown class="h-10 w-10" />
+        </li>
+        <li class="flex items-center">
+          <Npm class="h-10 w-10" />
+        </li>
+        <li class="flex items-center">
+          <Yarn class="h-10 w-10" />
+        </li>
+        <li class="flex items-center">
+          <Jira class="h-10 w-10" />
+        </li>
+        <li class="flex items-center">
+          <Trello class="h-10 w-10" />
+        </li>
+        <li class="flex items-center">
+          <Pandas class="h-10 w-10" />
+        </li>
       </ul>
     </div>
   </div>
@@ -129,6 +205,22 @@ import C from "../assets/devicon/c.svg?inline";
 import Django from "../assets/devicon/django.svg?inline";
 import Flask from "../assets/devicon/flask.svg?inline";
 import Java from "../assets/devicon/java.svg?inline";
+import Mysql from "../assets/devicon/mysql.svg?inline";
+import Mongodb from "../assets/devicon/mongodb.svg?inline";
+import Solidity from "../assets/devicon/solidity.svg?inline";
+import Sqlite from "../assets/devicon/sqlite.svg?inline";
+import Vscode from "../assets/devicon/vscode.svg?inline";
+import Cpp from "../assets/devicon/cpp.svg?inline";
+import Docker from "../assets/devicon/docker.svg?inline";
+import Linux from "../assets/devicon/linux.svg?inline";
+import Markdown from "../assets/devicon/markdown.svg?inline";
+import Npm from "../assets/devicon/npm.svg?inline";
+import Postgresql from "../assets/devicon/postgresql.svg?inline";
+import Yarn from "../assets/devicon/yarn.svg?inline";
+import Ubuntu from "../assets/devicon/ubuntu.svg?inline";
+import Jira from "../assets/devicon/jira.svg?inline";
+import Trello from "../assets/devicon/trello.svg?inline";
+import Pandas from "../assets/devicon/pandas.svg?inline";
 
 export default {
   components: {
@@ -147,6 +239,22 @@ export default {
     Flask,
     Gitlab,
     Java,
+    Mysql,
+    Mongodb,
+    Solidity,
+    Sqlite,
+    Vscode,
+    Cpp,
+    Docker,
+    Linux,
+    Markdown,
+    Npm,
+    Postgresql,
+    Yarn,
+    Ubuntu,
+    Trello,
+    Jira,
+    Pandas,
   },
 };
 </script>
