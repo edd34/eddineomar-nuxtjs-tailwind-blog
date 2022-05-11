@@ -9,22 +9,27 @@
       />
       <div class="mb-2 mx-7 mt-4 justify-center items-center">
         <h1
-          class="md:text-3xl text-2xl text-gray-800 font-bold dark:text-blue-100"
+          class="
+            md:text-3xl
+            text-2xl text-gray-800
+            font-bold
+            dark:text-blue-100
+          "
         >
           {{ siteMetadata.author }}
         </h1>
         <div class="md:text-lg text-gray-600 dark:text-blue-100">
           {{ siteMetadata.position }}
         </div>
-        <div/>
+        <div />
         <div class="md:text-lg text-gray-600 dark:text-blue-100">
           {{ siteMetadata.position2 }}
         </div>
-        <div/>
+        <div />
         <div class="md:text-lg text-gray-600 dark:text-blue-100">
           {{ siteMetadata.position3 }}
         </div>
-        <br/>
+        <br />
         <a
           :href="`mailto:${siteMetadata.email}`"
           class="text-gray-600 md:hidden mt-1 dark:text-blue-100"
@@ -36,16 +41,20 @@
 
     <div class="mx-7 hidden md:block">
       <div class="my-2 text-gray-600 flex dark:text-blue-100">
-        <Mail />
+        <Mail class="mr-1" />
         <a :href="`mailto:${siteMetadata.email}`"> {{ siteMetadata.email }}</a>
       </div>
       <div class="my-2 text-gray-600 flex dark:text-blue-100">
-        <Glob />
+        <Glob class="mr-1" />
         <p>{{ siteMetadata.location }}</p>
       </div>
       <div class="my-2 text-gray-600 flex dark:text-blue-200">
-        <Github />
+        <Github class="mr-1" />
         <a :href="siteMetadata.github"> {{ siteMetadata.githubUser }}</a>
+      </div>
+      <div class="my-2 text-gray-600 flex dark:text-blue-200">
+        <CV class="mr-1" />
+        <a href="/CV OMAR Eddine.pdf" download="">CV</a>
       </div>
     </div>
   </div>
@@ -55,9 +64,10 @@
 import Mail from "../assets/icon/mail.svg?inline";
 import Glob from "../assets/icon/glob.svg?inline";
 import Github from "../assets/icon/github_new.svg?inline";
+import CV from "../assets/icon/file.svg?inline";
 import siteMetaInfo from "@/data/sitemetainfo";
 export default {
-  components: { Mail, Glob, Github },
+  components: { Mail, Glob, Github, CV },
   data: () => {
     return {
       siteMetadata: siteMetaInfo,

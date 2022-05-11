@@ -179,9 +179,6 @@
           <Jira class="h-10 w-10" />
         </li>
         <li class="flex items-center">
-          <Trello class="h-10 w-10" />
-        </li>
-        <li class="flex items-center">
           <Pandas class="h-10 w-10" />
         </li>
       </ul>
@@ -219,7 +216,6 @@ import Postgresql from "../assets/devicon/postgresql.svg?inline";
 import Yarn from "../assets/devicon/yarn.svg?inline";
 import Ubuntu from "../assets/devicon/ubuntu.svg?inline";
 import Jira from "../assets/devicon/jira.svg?inline";
-import Trello from "../assets/devicon/trello.svg?inline";
 import Pandas from "../assets/devicon/pandas.svg?inline";
 
 export default {
@@ -252,7 +248,6 @@ export default {
     Postgresql,
     Yarn,
     Ubuntu,
-    Trello,
     Jira,
     Pandas,
   },
