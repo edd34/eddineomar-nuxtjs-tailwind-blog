@@ -1,5 +1,5 @@
 ---
-title: Ajouter le temps de lecture d'un article de blog sur Nuxt
+title: Ajouter le temps de lecture d'un article sur Nuxt
 subtitle: La solution pour afficher le temps de lecture d'un article sur un site internet
 category:
   - Architectures logicielles
