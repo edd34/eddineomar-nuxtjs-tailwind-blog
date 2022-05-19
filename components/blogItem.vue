@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="!draft">
     <article
       class="
         relative
@@ -55,13 +55,14 @@
 
 <script>
 export default {
-  props: ["title", "description", "date", "slug"],
+  props: ["title", "description", "date", "slug", "draft"],
   data() {
     return {
       postTitle: this.title,
       postDescription: this.description,
       postSlug: this.slug,
       postDate: this.date,
+      draft: this.draft,
     };
   },
   methods: {
