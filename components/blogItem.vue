@@ -62,7 +62,6 @@ export default {
       postDescription: this.description,
       postSlug: this.slug,
       postDate: this.date,
-      draft: this.draft,
     };
   },
   methods: {
