@@ -5,7 +5,7 @@ category:
   - Architectures logicielles
 author: Eddine Omar
 date: 2022-05-14T10:28:00.00Z
-draft: true
+draft: false
 image: 
 ---
 
