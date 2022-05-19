@@ -46,7 +46,7 @@ export default {
         "date",
         "draft",
       ])
-      .sortBy("date", "asc")
+      .sortBy("date", "desc")
       .fetch();
 
     return {
