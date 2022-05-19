@@ -26,6 +26,11 @@
         </a>
       </div>
     </div>
+    <reading-time
+      :content="article.body"
+      class="flex items-center font-medium mt-6 sm:mx-3 justify-center"
+    ></reading-time>
+
     <img
       class="mx-auto w-4/5 my-10 rounded-md drop-shadow-sm"
       :src="article.image"
