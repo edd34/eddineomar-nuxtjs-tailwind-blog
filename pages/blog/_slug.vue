@@ -37,6 +37,7 @@
     />
 
     <nuxt-content class="prose min-w-full p-10 mx-auto" :document="article" />
+    <Disqus />
   </div>
 </template>
 <script>
