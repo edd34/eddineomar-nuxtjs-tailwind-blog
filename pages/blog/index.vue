@@ -27,6 +27,7 @@
         :description="article.description"
         :date="article.date"
         :slug="article.slug"
+        :draft="article.draft"
       ></blog-item>
     </div>
   </div>
