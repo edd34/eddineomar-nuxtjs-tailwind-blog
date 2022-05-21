@@ -78,6 +78,5 @@ export default {
     id: 'G-2Z6V3BR66E', // Used as fallback if no runtime config is provided
     pageTracking: true,
     enabled: true,
-    debug: true
   },
 }
