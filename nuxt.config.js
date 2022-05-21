@@ -23,7 +23,8 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   // ...
   plugins: [
-    '~/plugins/disqus'
+    '~/plugins/disqus',
+    '~/plugins/gtm'
   ],
 
 
@@ -75,6 +76,6 @@ export default {
 
   gtm: {
     id: 'G-2Z6V3BR66E', // Used as fallback if no runtime config is provided
-    enabled: true,
+    pageTracking: true,
   },
 }
