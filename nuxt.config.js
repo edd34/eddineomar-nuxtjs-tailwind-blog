@@ -42,7 +42,7 @@ export default {
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxt/content", "@nuxtjs/svg", "@nuxt/image"],
+  modules: ["@nuxt/content", "@nuxtjs/svg", "@nuxt/image", '@nuxtjs/gtm'],
   svg: {
     vueSvgLoader: {
       // vue-svg-loader options
@@ -72,4 +72,9 @@ export default {
       },
     },
   },
-};
+
+  gtm: {
+    id: 'G-2Z6V3BR66E', // Used as fallback if no runtime config is provided
+    enabled: true,
+  },
+}
