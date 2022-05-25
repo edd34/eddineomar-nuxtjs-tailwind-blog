@@ -54,7 +54,11 @@
       </div>
       <div class="my-2 text-gray-600 flex dark:text-blue-200">
         <CV class="mr-1" />
-        <a href="/CV OMAR Eddine.pdf" download="">CV</a>
+        <a href="/CV Court OMAR Eddine (Freelance).pdf" download="">CV court</a>
+      </div>
+      <div class="my-2 text-gray-600 flex dark:text-blue-200">
+        <CV class="mr-1" />
+        <a href="/CV Long OMAR Eddine Freelance.pdf" download="">CV long</a>
       </div>
     </div>
   </div>
