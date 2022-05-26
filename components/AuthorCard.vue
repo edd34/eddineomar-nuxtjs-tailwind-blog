@@ -60,6 +60,10 @@
         <CV class="mr-1" />
         <a href="/CV Long OMAR Eddine Freelance.pdf" download="">CV long</a>
       </div>
+      <div class="my-2 text-gray-600 flex dark:text-blue-200">
+        <Malt class="mr-1 flex-no-shrink fill-current" />
+        <a href="https://www.malt.fr/profile/eddineomar">Profil Malt</a>
+      </div>
     </div>
   </div>
 </template>
@@ -68,10 +72,11 @@
 import Mail from "../assets/icon/mail.svg?inline";
 import Glob from "../assets/icon/glob.svg?inline";
 import Github from "../assets/icon/github_new.svg?inline";
+import Malt from "../assets/icon/malt-logo.svg?inline";
 import CV from "../assets/icon/file.svg?inline";
 import siteMetaInfo from "@/data/sitemetainfo";
 export default {
-  components: { Mail, Glob, Github, CV },
+  components: { Mail, Glob, Github, CV, Malt },
   data: () => {
     return {
       siteMetadata: siteMetaInfo,
