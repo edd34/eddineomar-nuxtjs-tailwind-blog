@@ -1,8 +1,8 @@
 ---
-title: Intro Git for developers 101
+title: Introduction série de blog Git 101
 subtitle: Une série sur l'outil de version de contrôle Git
 author: Eddine Omar
-tags: python
+tags: git
 date: 2022-05-23T18:00:00.00Z
 draft: false
 ---
@@ -67,7 +67,7 @@ Nous pouvons voir que Git se démarque clairement de la concurrence. Cela est du
 Bien que l'apprentissage de Git puisse sembler difficile au premier abord, je vous garantis qu'il s'agit d'un outil qui vous fera grandement avancer dans votre carrière de développeur professionnel.
 
 
-The plan of the Git 101 Journey is the following :
+Le plan de la série de billet de blog "Git 101" est le suivant :
 - Partie 1 : Installation, configuration et premiers pas.
 - Partie 2 : Créer un repo local, création des premiers commits et historique.
 - Partie 3 : L'arbre, l'index et le dépôt local.
