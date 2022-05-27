@@ -32,6 +32,14 @@
           ><span class="sr-only">youtube</span>
           <img class="w-8 h-8" src="~assets/icon/youtube.svg"
         /></a>
+        <a
+          class="text-sm text-gray-500 transition hover:text-gray-600"
+          target="_blank"
+          rel="noopener noreferrer"
+          :href="siteMetadata.malt"
+          ><span class="sr-only">malt</span>
+          <img class="w-8 h-8" src="~assets/icon/malt-logo.svg"
+        /></a>
       </div>
       <div class="flex mb-2 space-x-2 text-sm text-gray-500 dark:text-gray-400">
         <div>Copyright © {{ new Date().getFullYear() }}</div>

@@ -5,7 +5,7 @@ const siteMetaInfo = {
   position: "🐍 Python/DevOps Software engineer 👨‍💻 ⌨️",
   position2: "✨ Mentor @Openclassroom DA Python 🐍",
   position3: "💻 Formateur Java @CCI",
-  location: "Mayotte",
+  location: "Paris",
   headerTitle: "Eddine OMAR",
   slogan: "Skills are cheap, Passion is priceless",
   description:
@@ -25,6 +25,7 @@ const siteMetaInfo = {
   stackoverflow: "https://stackoverflow.com/users/9127197/edd34",
   youtube: "https://www.youtube.com/channel/UC_ll5CLLIAgAX4pbEd7OoqQ/featured",
   linkedin: "https://www.linkedin.com/in/eddineomar/",
+  malt: "https://www.malt.fr/profile/eddineomar"
 };
 
 export default siteMetaInfo;
