@@ -45,7 +45,7 @@ Memorism est le nom du projet réalisé, il est hébergé sur Github à cette ad
 
 En versionnant votre projet, avez la possibilité de revenir en arrière, faire des commits dans des branches séparées et sécuriser votre développement.
 
-# Quels sont les autres VCS sur le marché .
+# Quels sont les autres VCS sur le marché ?
 
 Git n'est pas le seul VCS présent sur le marché, voici une liste non exhaustive de ses concurrents :
  - SVN : Apache Subversion est un VCS centralisé et opensource actuellement développé et maintenu par l'Apache Software Foundation et sa communauté.
