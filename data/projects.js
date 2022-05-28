@@ -9,7 +9,7 @@ const projectsData = [
     tech1: "Python",
     tech2: "Pandas",
     tech3: "Selenium",
-    tech4: "python-dotven"
+    tech4: "python-dotenv"
   },
   {
     title: "Kamusy Backend",
