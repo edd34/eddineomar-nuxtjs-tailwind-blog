@@ -16,7 +16,9 @@
         Projets
       </h1>
       <p class="text-lg leading-7 text-gray-500 dark:text-gray-400">
-        Parmis les projets dont j'ai réalisés ! Je travaille souvent avec
+        Je suis constamment en train de m'autoformer, de hacker un programme ou
+        en train de développer un projet. Je vous partage une partie des projets
+        intéressants que j'ai réalisés. Côté technos : je travaille souvent avec
         Python, Django, Flask, Git, Github, Vue/Nuxt et TailwindCSS. Il y a
         également des projets cryptos avec web3py, solidity et plein d'autres à
         venir !
