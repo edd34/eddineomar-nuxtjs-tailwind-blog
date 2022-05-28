@@ -72,6 +72,18 @@ const projectsData = [
     tech4: "OrFeed API"
   },
   {
+    title: "Defi Rate Plus",
+    category: "Blockchain",
+    description: "Defi Rate Plus tire parti des capacités de Selenium dans le but de récupérer les informations de taux de prêts et taux d'emprunts sur le site https://defirate.com/",
+    imgSrc: "",
+    href: "",
+    github: "https://github.com/edd34/defi-rates-plus",
+    tech1: "Python",
+    tech2: "Web3",
+    tech3: "Selenium",
+    tech4: "Scraping"
+  },
+  {
     title: "Devblog",
     category: "Front-End",
     description: "Site internet personnel réalisé avec Nuxt, Nuxt/Content et NetlifyCMS.",
