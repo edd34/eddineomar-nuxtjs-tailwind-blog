@@ -38,7 +38,7 @@ const projectsData = [
   {
     title: "MayImmo",
     category: "Python",
-    description: "Une application de listing immobilier type seloger.com qui exploite les données d'openstreetmap pour fournir des informations sur les infrastructures du voisinage proche.",
+    description: "Une application de listing immobilier type seloger.com qui exploite les données d'openstreetmap pour fournir des informations sur les infrastructures  et points d'intérêts proche du bien listé.",
     imgSrc: "",
     href: "",
     github: "https://github.com/edd34/mayimmo",
