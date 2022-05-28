@@ -21,6 +21,10 @@
         également des projets cryptos avec web3py, solidity et plein d'autres à
         venir !
       </p>
+      <p class="text-m leading-7 text-gray-500 dark:text-gray-400 italic">
+        PSSST!? Au fait, ça vous dirait d'aller mettre des 🌟 dans mes projets
+        perso sur Github ?
+      </p>
     </div>
     <main class="relative mb-auto">
       <div class="">
