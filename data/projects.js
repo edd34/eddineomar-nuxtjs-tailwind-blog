@@ -48,6 +48,18 @@ const projectsData = [
     tech4: "openstreetmap"
   },
   {
+    title: "Mayotte Geo Data Mining",
+    category: "Python",
+    description: "Il s'agit d'un notebook Jupyter pour étudier le fonctionnement de l'API openstreetmap de récupérer, extraire et nettoyer les points d'intérêts présents sur OSM.",
+    imgSrc: "",
+    href: "",
+    github: "https://github.com/edd34/Mayotte-Geo-Data-Mining",
+    tech1: "Python, flask",
+    tech2: "Jupyter Notebook",
+    tech3: "geopandas & geojson",
+    tech4: "openstreetmap"
+  },
+  {
     title: "Oracle OrFeed",
     category: "Python",
     description: "Oracle OrFeed est un projet python qui récupère les prix de différents token dans différents DEX (Decentralied Exchange) et tente de trouver des opportunités d'arbitrages entre les DEX.",
