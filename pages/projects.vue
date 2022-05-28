@@ -13,10 +13,13 @@
           md:text-6xl md:leading-14
         "
       >
-        Projects
+        Projets
       </h1>
       <p class="text-lg leading-7 text-gray-500 dark:text-gray-400">
-        Parmis les projets dont j'ai réalisés !
+        Parmis les projets dont j'ai réalisés ! Je travaille souvent avec
+        Python, Django, Flask, Git, Github, Vue/Nuxt et TailwindCSS. Il y a
+        également des projets cryptos avec web3py, solidity et plein d'autres à
+        venir !
       </p>
     </div>
     <main class="relative mb-auto">
@@ -33,6 +36,7 @@
               :tech1="item.tech1"
               :tech2="item.tech2"
               :tech3="item.tech3"
+              :tech4="item.tech4"
             ></project-card>
           </div>
         </div>
@@ -50,7 +54,7 @@ export default {
     };
   },
   head: {
-    title: "Eddine OMAR | Projets",
+    title: "🚀 Eddine OMAR | 🚧Projets🚧",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
