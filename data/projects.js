@@ -61,7 +61,7 @@ const projectsData = [
   },
   {
     title: "Oracle OrFeed",
-    category: "Python",
+    category: "Blockchain",
     description: "Oracle OrFeed est un projet python qui récupère les prix de différents token dans différents DEX (Decentralied Exchange) et tente de trouver des opportunités d'arbitrages entre les DEX.",
     imgSrc: "",
     href: "",
