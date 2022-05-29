@@ -27,11 +27,13 @@ Probablement le site internet le moins drôle de la section mais il faut savoir 
 - [Gérer, déclarer, payer](https://www.autoentrepreneur.urssaf.fr/services/)
 
 # Forums
+Je passe régulièrement sur les forums pour me tenir à jour des discussions du moment.
 - [https://www.freelance-info.fr/forum/](https://www.freelance-info.fr/forum/)
 - [https://forum.pragmaticentrepreneurs.com/](https://forum.pragmaticentrepreneurs.com/)
 - [https://forum.humancoders.com/](https://forum.humancoders.com/)
 
 # Tarif TJM
+TJM pour Tarif Journalier Moyen, c'est en gros ce que tu factures à ton client. Voici des liens qui donnent des TJM par région et par métier.
 - [Freelance : Baromètre 2021 des TJM dans l’informatique et le digital](https://www.silkhom.com/barometre-2021-des-tjm-dans-informatique-digital/)
 - [Club Freelance : le TJM des freelances IT en France est de 540 euros](https://www.developpez.com/actu/234123/Club-Freelance-le-TJM-des-freelances-IT-en-France-est-de-540-euros-le-freelancing-est-il-plus-remunerateur-qu-un-emploi-salarie-dans-l-IT/)
 - [ Rémunération de la fonction Développeur Python](https://www.free-work.com/fr/tech-it/developpeur-python/rate-tjm-freelance)

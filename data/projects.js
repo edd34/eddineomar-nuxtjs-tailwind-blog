@@ -2,7 +2,7 @@ const projectsData = [
   {
     title: "Missions Finder",
     category: "Python",
-    description: "Permet de chercher des offres d’emploi sur des jobboards spécialisés, effectue un filtre selon les critères défninis dans le programme.",
+    description: "Permet de chercher des offres d’emploi sur des jobboards spécialisés, effectue un filtre selon les critères définis dans le programme.",
     imgSrc: "",
     href: "#",
     github: "https://github.com/edd34/missions-finder",
@@ -14,7 +14,7 @@ const projectsData = [
   {
     title: "Kamusy Backend",
     category: "Python",
-    description: "Un clone de Google traduction qui permet de rajouter des langues régionales ou non répertorée, ainsi que des mots, et traductions de mots.",
+    description: "Un clone de Google Translate qui permet de rajouter des langues régionales ou non répertoriées, ainsi que des mots, et traductions de mots.",
     imgSrc: "",
     href: "",
     github: "https://github.com/edd34/kamusy-django",
@@ -38,7 +38,7 @@ const projectsData = [
   {
     title: "MayImmo",
     category: "Python",
-    description: "Une application de listing immobilier type seloger.com qui exploite les données d'openstreetmap pour fournir des informations sur les infrastructures  et points d'intérêts proche du bien listé.",
+    description: "Une application de listing immobilier type seloger.com qui exploite les données géographiques d'openstreetmap pour fournir des informations sur les infrastructures et points d'intérêts proche du bien listé.",
     imgSrc: "",
     href: "",
     github: "https://github.com/edd34/mayimmo",

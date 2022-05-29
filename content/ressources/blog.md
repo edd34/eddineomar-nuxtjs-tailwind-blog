@@ -7,7 +7,8 @@ draft: false
 image: ""
 ---
 
-# Les blog indé
+# Les blog indés
+Ce sont des blogs de personnes comme vous et moi !
 - [https://www.kalzumeus.com/greatest-hits/](https://www.kalzumeus.com/greatest-hits/)
 - [https://www.hillelwayne.com/post/](https://www.hillelwayne.com/post/)
 - [https://lars.hupel.info/articles/](https://lars.hupel.info/articles/)
@@ -39,7 +40,7 @@ image: ""
 ## Blog de produit ou d'entreprise
 - [Blog de freebe](https://www.freebe.me/blog)
 
-# Autres superblog
+## Autres superblog
 - [Devenir Développeur Freelance](https://devenirdeveloppeurfreelance.com/)
 - [Blog café freelance](https://blog.freelance.com/)
 - [Amedee](https://www.amedee.co/)
