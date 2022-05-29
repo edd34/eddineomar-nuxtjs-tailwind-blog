@@ -43,7 +43,7 @@ export default {
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxt/content", "@nuxtjs/svg", "@nuxt/image", '@nuxtjs/gtm'],
+  modules: ["@nuxt/content", "@nuxtjs/svg", "@nuxt/image"],
   svg: {
     vueSvgLoader: {
       // vue-svg-loader options
@@ -72,12 +72,5 @@ export default {
         autoprefixer: {},
       },
     },
-  },
-
-  gtm: {
-    id: 'G-2Z6V3BR66E', // Used as fallback if no runtime config is provided
-    pageTracking: true,
-    enabled: true,
-    debug: true
   },
 }
