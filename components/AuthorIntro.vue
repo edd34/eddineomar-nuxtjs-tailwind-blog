@@ -38,6 +38,6 @@
     </p>
 
     <p />
-    Au plaisir d'échanger. N'hésitez pas à parcours le blog en attendant.
+    Au plaisir d'échanger. N'hésitez pas à parcourir le blog en attendant.
   </div>
 </template>
