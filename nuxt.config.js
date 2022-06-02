@@ -42,7 +42,7 @@ export default {
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxt/content", "@nuxtjs/svg", "@nuxt/image"],
+  modules: ["@nuxt/content", "@nuxtjs/svg", "@nuxt/image", "@nuxtjs/robots"],
   svg: {
     vueSvgLoader: {
       // vue-svg-loader options
@@ -72,4 +72,9 @@ export default {
       },
     },
   },
+
+  robots: {
+    UserAgent: '*',
+    Disallow: '/CV/*'
+  }
 }
