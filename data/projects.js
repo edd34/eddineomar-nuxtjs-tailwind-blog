@@ -12,6 +12,18 @@ const projectsData = [
     tech4: "python-dotenv"
   },
   {
+    title: "Freelance Info Stats",
+    category: "Python",
+    description: "Missions Finder is a program that use selenium in order to scrap and search freelance missions on various website.",
+    imgSrc: "",
+    href: "#",
+    github: "https://github.com/edd34/freelance_info_stats",
+    tech1: "Python",
+    tech2: "Pandas",
+    tech3: "Matplotlib",
+    tech4: "Seaborn"
+  },
+  {
     title: "Kamusy Backend",
     category: "Python",
     description: "Un clone de Google Translate qui permet de rajouter des langues régionales ou non répertoriées, ainsi que des mots, et traductions de mots.",
