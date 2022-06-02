@@ -3,16 +3,12 @@
 
 <head {{ HEAD_ATTRS }}>
     {{ HEAD }}
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z6V3BR66E"></script>
+    <!-- Panelbear -->
+    <script async src="https://cdn.panelbear.com/analytics.js?site=EOg9HbAzg1r"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-2Z6V3BR66E');
+        window.panelbear = window.panelbear || function () { (window.panelbear.q = window.panelbear.q || []).push(arguments); };
+        panelbear('config', { site: 'EOg9HbAzg1r' });
     </script>
-
 </head>
 
 <body {{ BODY_ATTRS }}>
