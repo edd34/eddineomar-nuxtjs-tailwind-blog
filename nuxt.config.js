@@ -75,10 +75,13 @@ export default {
 
   robots: {
     UserAgent: '*',
-    Disallow: '/CV/*'
+    Disallow: '/CV/**'
   },
   sitemap: {
     hostname: 'https://www.eddineomar.fr/',
-    routes: {}
+    routes: {},
+    exclude: [
+      '/CV/**',
+    ],
   }
 }
