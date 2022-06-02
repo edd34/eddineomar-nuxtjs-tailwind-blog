@@ -1,5 +1,17 @@
 const projectsData = [
   {
+    title: "PDF Invoice Extractor",
+    category: "Python",
+    description: "Un projet qui permet d'extraire des données issues de factures au format PDF afin d'extraire des données utiles.",
+    imgSrc: "",
+    href: "#",
+    github: "https://github.com/edd34/pdf_invoice_extractor",
+    tech1: "Python",
+    tech2: "Borb",
+    tech3: "Pdfplumber",
+    tech4: "Pandas"
+  },
+  {
     title: "Missions Finder",
     category: "Python",
     description: "Permet de chercher des offres d’emploi sur des jobboards spécialisés, effectue un filtre selon les critères définis dans le programme.",
@@ -14,7 +26,7 @@ const projectsData = [
   {
     title: "Freelance Info Stats",
     category: "Python",
-    description: "Missions Finder is a program that use selenium in order to scrap and search freelance missions on various website.",
+    description: "Permet de récolter des statistiques sur les tendances du marché freelance en France.",
     imgSrc: "",
     href: "#",
     github: "https://github.com/edd34/freelance_info_stats",
