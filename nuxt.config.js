@@ -42,7 +42,7 @@ export default {
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxt/content", "@nuxtjs/svg", "@nuxt/image", "@nuxtjs/robots", '@nuxtjs/sitemap'],
+  modules: ["@nuxt/content", "@nuxtjs/svg", "@nuxt/image", "@nuxtjs/robots", '@nuxtjs/sitemap', '@nuxtjs/feed'],
   svg: {
     vueSvgLoader: {
       // vue-svg-loader options
@@ -83,5 +83,42 @@ export default {
     exclude: [
       '/CV/**',
     ],
+  },
+  feed: () => {
+    const baseUrlArticles = 'https://www.eddineomar.fr/blog'
+    const feedFormats = {
+      rss: { type: 'rss2', file: 'rss.xml' },
+      json: { type: 'json1', file: 'feed.json' },
+    }
+    const { $content } = require('@nuxt/content')
+
+    const createFeedArticles = async function (feed) {
+      feed.options = {
+        title: 'Eddine OMAR Blog',
+        description: 'Mon dev blog',
+        link: baseUrlArticles,
+      }
+      const articles = await $content('articles').fetch()
+
+      articles.forEach((article) => {
+        const url = `${baseUrlArticles}/${article.slug}`
+
+        feed.addItem({
+          title: article.title,
+          id: url,
+          link: url,
+          date: article.published,
+          description: article.summary,
+          content: article.summary,
+          author: article.authors,
+        })
+      })
+    }
+
+    return Object.values(feedFormats).map(({ file, type }) => ({
+      path: `${file}`,
+      type: type,
+      create: createFeedArticles,
+    }))
   }
 }
