@@ -31,7 +31,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ["@nuxt/postcss8", "@nuxt/image"],
+  buildModules: ["@nuxt/postcss8", "@nuxt/image", '~/modules/siteMapGenerator'],
   vite: {
     /* options for vite */
     // ssr: true // enable unstable server-side rendering for development (false by default)
@@ -42,7 +42,7 @@ export default {
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxt/content", "@nuxtjs/svg", "@nuxt/image", "@nuxtjs/robots"],
+  modules: ["@nuxt/content", "@nuxtjs/svg", "@nuxt/image", "@nuxtjs/robots", '@nuxtjs/sitemap'],
   svg: {
     vueSvgLoader: {
       // vue-svg-loader options
@@ -76,5 +76,9 @@ export default {
   robots: {
     UserAgent: '*',
     Disallow: '/CV/*'
+  },
+  sitemap: {
+    hostname: 'https://www.eddineomar.fr/',
+    routes: {}
   }
 }
