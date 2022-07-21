@@ -26,7 +26,12 @@ Voici les étapes que nous allons voir ensemble :
 
 # 1. Appliquer les mises à jour
 Un moyen simple de garder son VPS sécurité, notamment contre les failles CVE, est d'appliquer les mises à jour de sécurité.
-Sur une machine Ubuntu, on peut appliquer les mises à jour avec la commande : ``` sudo apt update && sudo apt upgrade -y ```
+Sur une machine Ubuntu, on peut appliquer les mises à jour avec la commande :
+
+```
+sudo apt update && sudo apt upgrade -y
+```
+
 Voilà, effectuez les mises à jour aussi souvent que nécessaire.
 
 # 2. Changer le port SSH
@@ -50,7 +55,9 @@ Voilà !
 
 # 3. S'authentifier avec une clé SSH
 Pour s'authentifier avec une clé SSH (avec un algo comme RSA, ECDSA, DSA etc...), il faut procéder en quelques étapes :
+
 a. Créer une clé dans son ordinateur : `ssh-keygen -t ECDSA -b 4096`, mettez un mot de passe fin de protéger les cas où la clé fuite (cela peut arriver). Ne mettez pas de mot de passe dans les cas où vous souhaitez automatiser des process !
+
 b. Copiez la clé dans votre serveur avec ssh-copy-id :
 ```
 ssh-copy-id -i ~/.ssh/maclessh user@hostname -P PORT
@@ -62,15 +69,16 @@ ssh user@hostname -p PORT
 
 # 4. Supprimer l'authentification par mot de passe
 Une fois la connexion avec clé SSH configurée et testée avec succès, on peut désactiver la connexion SSH via mot de passe.
-
+a. Ouvrir le fichier `/etc/ssh/sshd_config` à l'aide de vim (ou de n'importe quel éditeur de fichier) avec les droits super utilisateur :
 
 ```
-# To disable tunneled clear text passwords, change to no here!
+sudo vim /etc/ssh/sshd_config
+```
+b. Modifier la ligne
+```
 PasswordAuthentication yes
 ```
-
 en 
-
 ```
 # To disable tunneled clear text passwords, change to no here!
 PasswordAuthentication yes
