@@ -76,7 +76,8 @@ sudo vim /etc/ssh/sshd_config
 ```
 b. Modifier la ligne
 ```
-PasswordAuthentication yes
+# To disable tunneled clear text passwords, change to no here!
+PasswordAuthentication no
 ```
 en 
 ```
@@ -84,7 +85,7 @@ en
 PasswordAuthentication yes
 ```
 
-On redémarre le service SSH :
+c. Redémarrer le service SSH
 ```
 sudo service ssh restart
 ```
