@@ -17,7 +17,7 @@ Disclaimer : il est possible que vous perdiez l'accès à votre VPS pendant la m
 NB : j'utilise un VPS sous Ubuntu Server 22.04 LTS
 
 Voici les étapes que nous allons voir ensemble :
-1. Appliquer les mies à jour
+1. Appliquer les mises à jour
 2. Changer le port SSH
 3. S'authentifier avec une clé SSH
 4. Supprimer l'authentification par mot de passe
@@ -25,7 +25,7 @@ Voici les étapes que nous allons voir ensemble :
 6. Installer et configurer fail2ban
 
 # 1. Appliquer les mises à jour
-Un moyen simple de garder son VPS sécurité, notamment contre les failles CVE, est d'appliquer les mises à jour de sécurité.
+Un moyen simple de garder son VPS sécurisé, notamment contre les failles CVE, est d'appliquer les mises à jour de sécurité.
 Sur une machine Ubuntu, on peut appliquer les mises à jour avec la commande :
 
 ```
