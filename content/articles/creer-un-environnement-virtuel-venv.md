@@ -53,8 +53,3 @@ Maintenant vous êtes en mesure de tester un projet python en local ou de travai
 # Pour aller plus loin
  * [Virtual Environments and Packages](https://docs.python.org/3/tutorial/venv.html)
  * [Python Virtual Environments: A Primer](https://realpython.com/python-virtual-environments-a-primer/)
-
-
-
-
-# En savoir plus
