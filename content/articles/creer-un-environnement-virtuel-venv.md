@@ -8,11 +8,14 @@ draft: false
 ---
 # Introduction
 Les environnements virtuels embarquent toutes les dépendances d'un projet Python mais dans un scope plus petit que le scope "système".
-*Pourquoi installer un environnement virtuel ?* :
+
+Voici pourquoi utiliser un environnement virtuel :
  * Ne pas polluer sa machine
  * Éviter les conflits de dépendances
  * Réduire les problèmes de reproductibilité
  * Contourner les problèmes de privilèges d'installation
+
+Voyons maintenant comment cela s'utilise concrètement.
 
 # Préliminaire : installer les outils
 Assurons nous d'avoir les dépendances nécessaire au bon fonctionnement de Python et venv
