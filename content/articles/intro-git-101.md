@@ -68,12 +68,12 @@ Bien que l'apprentissage de Git puisse sembler difficile au premier abord, je vo
 
 
 Le plan de la série de billet de blog "Git 101" est le suivant :
-- Partie 1 : Installation, configuration et premiers pas.
+- Partie 1 : Installation et configuration initiale de Git
 - Partie 2 : Créer un repo local, création des premiers commits et historique.
 - Partie 3 : L'arbre, l'index et le dépôt local.
 - Partie 4 : Fonctionnalités avancées : branching et merging
 - Partie 5 : Comment gérer les conflits dans Git ?
-- Partie 6: Configurer une clé SSH dans Github ?
+- Partie 6 : Configurer une clé SSH dans Github
 - Partie 7 : Comment contribuer à du code source dans Github ?
 
 Chaque point sera développé dans un article sur ce blog même. Restez à l'affût !
