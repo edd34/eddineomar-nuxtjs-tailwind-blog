@@ -4,7 +4,7 @@ subtitle:
 author: Eddine Omar
 date: 2022-05-28T18:00:00.00Z
 draft: false
-image: ""
+image: https://unsplash.com/photos/GhwCef9VRr4/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Nnx8ZnJlZWxhbmNlfGVufDB8fHx8MTY1OTcxMTc2Mg&force=true&w=640
 ---
 Vous trouverez une liste des plateformes dont je me sers pour trouver des missions freelances.
 

@@ -4,6 +4,7 @@ subtitle:
 author: Eddine Omar
 date: 2022-06-02T18:00:00.00Z
 draft: false
+image: https://unsplash.com/photos/DuHKoV44prg/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjU5NzE2MDYw&force=true&w=640
 ---
 Dans ce listing, je vais vour présenter tous les outils dont je me sers au quotidien dans mes activités de développements logiciels.
 # Le PC Portable

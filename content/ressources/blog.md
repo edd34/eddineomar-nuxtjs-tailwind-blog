@@ -4,7 +4,7 @@ subtitle:
 author: "Eddine Omar"
 date: 2022-05-29T18:00:00.00Z
 draft: false
-image: ""
+image: https://unsplash.com/photos/jLwVAUtLOAQ/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8YmxvZ3xlbnwwfHx8fDE2NTk3MTM1ODE&force=true&w=640
 ---
 
 # Les blog indés
