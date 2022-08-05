@@ -5,6 +5,7 @@ author: Eddine Omar
 tags: git
 date: 2022-05-23T18:00:00.00Z
 draft: false
+image: https://unsplash.com/photos/KPAQpJYzH0Y/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjU5NzE1Njg4&force=true&w=640
 ---
 # Introduction
 En 2019, j'ai eu l'opportunité d'enseigner les rudiments du VCS Git à mes collègues lors d'un atelier pendant une mission de consulting chez un client. Je pense que cela profiterait à beaucoup plus de monde en retranscrivant ces ateliers dans une série de posts.

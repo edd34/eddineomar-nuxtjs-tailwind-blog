@@ -7,6 +7,7 @@ author: Eddine Omar
 tags: python
 date: 2020-01-16T18:00:00.00Z
 draft: false
+image: https://unsplash.com/photos/8FjAcgcWR4E/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NHx8YnV6enxlbnwwfHx8fDE2NTk3MDI2MDU&force=true&w=640
 ---
 # Introduction
 Il s'agit initialement un jeu pour apprendre aux enfants la division : assis autour d'un cercle, ils comptent l'un après l'autre et prononcent Fizz Buzz selon les règles décrites dans le paragraphe suivant.

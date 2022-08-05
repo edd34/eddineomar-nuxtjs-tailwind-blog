@@ -5,6 +5,7 @@ author: Eddine Omar
 tags: DevOps
 date: 2022-07-21T18:00:00.00Z
 draft: false
+image: https://unsplash.com/photos/iar-afB0QQw/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8c2VydmVyJTIwc2VjdXJpdHl8ZW58MHx8fHwxNjU5NjU3NTg5&force=true&w=640
 ---
 # Introduction
 

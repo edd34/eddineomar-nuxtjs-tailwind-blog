@@ -5,6 +5,7 @@ author: Eddine Omar
 tags: git
 date: 2022-06-08T18:00:00.00Z
 draft: false
+image: https://unsplash.com/photos/wX2L8L-fGeA/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjU5NzE1Nzc0&force=true&w=640
 ---
 # Introduction
 Git est un VCS (Version Control System) open source le plus populaire du marché. Si vous êtes un développeur, apprendre à utiliser Git est une compétence incontournable. J'utilise Git au quotidien depuis plusieurs années, et j'ai décidé de vous donner les éléments essentiels pour donner un élan à votre carrière.

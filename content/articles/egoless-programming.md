@@ -5,6 +5,7 @@ author: Eddine Omar
 tags: Philosophy
 date: 2022-05-27T18:00:00.00Z
 draft: false
+image: https://unsplash.com/photos/Ki1SlvmcswM/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjU5NzE1OTM1&force=true&w=640
 ---
 # Introduction
 

@@ -5,6 +5,7 @@ author: Eddine Omar
 tags: 
 date: 2022-06-01T18:00:00.00Z
 draft: false
+image: https://unsplash.com/photos/hJ5uMIRNg5k/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8M3x8dmlydHVhbHxlbnwwfHx8fDE2NTk3MDk1MjM&force=true&w=640
 ---
 # Introduction
 Les environnements virtuels embarquent toutes les dépendances d'un projet Python mais dans un scope plus petit que le scope "système".
