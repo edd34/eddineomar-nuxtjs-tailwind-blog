@@ -146,6 +146,9 @@
           <Docker class="h-10 w-10" />
         </li>
         <li class="flex items-center">
+          <Bash class="h-10 w-10" />
+        </li>
+        <li class="flex items-center">
           <Linux class="h-10 w-10" />
         </li>
         <li class="flex items-center">
@@ -221,6 +224,7 @@ import Ubuntu from "../assets/devicon/ubuntu.svg?inline";
 import Jira from "../assets/devicon/jira.svg?inline";
 import Pandas from "../assets/devicon/pandas.svg?inline";
 import Redis from "../assets/devicon/redis.svg?inline";
+import Bash from "../assets/devicon/bash.svg?inline";
 
 export default {
   components: {
@@ -255,6 +259,7 @@ export default {
     Jira,
     Pandas,
     Redis,
+    Bash,
   },
 };
 </script>
