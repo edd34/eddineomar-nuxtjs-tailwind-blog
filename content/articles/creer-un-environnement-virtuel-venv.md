@@ -1,6 +1,6 @@
 ---
 title: "Créer un environnement virtuel avec Venv python"
-subtitle: ""
+description: "Les environnements virtuels embarquent toutes les dépendances d'un projet Python mais dans un scope plus petit que le scope système."
 author: Eddine Omar
 tags: 
 date: 2022-06-01T18:00:00.00Z

@@ -1,6 +1,6 @@
 ---
 title: Les tests en Python avec unittest
-subtitle: Introduction à la librairie unittest en Python
+description: Introduction à la librairie unittest en Python
 category:
   - Architectures logicielles
 author: Eddine Omar

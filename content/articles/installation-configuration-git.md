@@ -1,6 +1,6 @@
 ---
 title: Git 101 ep1 - Installation et configuration initiale de Git
-subtitle: Une série sur l'outil de version de contrôle Git
+description: Une série sur l'outil de version de contrôle Git
 author: Eddine Omar
 tags: git
 date: 2022-06-08T18:00:00.00Z

@@ -1,6 +1,6 @@
 ---
 title: Fizz Buzz
-subtitle: "FizzBuzz : un exercice devenu classique mondial en programmation"
+description: "FizzBuzz : un exercice devenu classique mondial en programmation"
 category:
   - Interview questions
 author: Eddine Omar

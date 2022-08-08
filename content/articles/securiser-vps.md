@@ -1,6 +1,6 @@
 ---
 title: "Sécuriser facilement son serveur en quelques étapes"
-subtitle: "Comment sécuriser son VPS en ligne ?"
+description: "Comment sécuriser son VPS en ligne ?"
 author: Eddine Omar
 tags: DevOps
 date: 2022-07-21T18:00:00.00Z

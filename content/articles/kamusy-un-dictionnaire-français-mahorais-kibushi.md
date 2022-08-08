@@ -1,6 +1,6 @@
 ---
-title: Kamusy un dictionnaire français mahorais kibushi
-subtitle: ""
+title: Kamusy.yt un dictionnaire français mahorais kibushi
+description: "Depuis au moins 3 ans j'ai commencé à travailler sur un projet de dictionnaire de traduction mahorais, kibushi, français. Aujourd'hui objectif atteint, chose dû le projet est prêt à être partagé au grand public !"
 category:
   - News
 author: Eddine Omar

@@ -1,11 +1,11 @@
 ---
-title: "Les 10 commandements de la programmation sans ego"
-subtitle: "L'art de programmer en mettant de côté son égo"
+title: "Les 10 commandements de la programmation zen"
+description: "Comment adopter une posture Zen face au stress, aux impératifs du quotidien et aux urgences et deadlines ?"
 author: Eddine Omar
 tags: Philosophy
 date: 2022-05-27T18:00:00.00Z
 draft: false
-image: https://unsplash.com/photos/Ki1SlvmcswM/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjU5NzE1OTM1&force=true&w=640
+image: https://unsplash.com/photos/NTyBbu66_SI/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjU5OTc2MzE2&force=true&w=640
 ---
 # Introduction
 
