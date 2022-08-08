@@ -152,7 +152,7 @@
           <Linux class="h-10 w-10" />
         </li>
         <li class="flex items-center">
-          <Ubuntu class="h-10 w-10" />
+          <Nginx class="h-10 w-10" />
         </li>
       </ul>
     </div>
@@ -225,6 +225,7 @@ import Jira from "../assets/devicon/jira.svg?inline";
 import Pandas from "../assets/devicon/pandas.svg?inline";
 import Redis from "../assets/devicon/redis.svg?inline";
 import Bash from "../assets/devicon/bash.svg?inline";
+import Nginx from "../assets/devicon/nginx.svg?inline";
 
 export default {
   components: {
@@ -260,6 +261,7 @@ export default {
     Pandas,
     Redis,
     Bash,
+    Nginx,
   },
 };
 </script>
