@@ -51,6 +51,9 @@
         <li class="flex items-center">
           <Postgresql class="h-10 w-10 rounded-sm drop-shadow-sm" />
         </li>
+        <li class="flex items-center">
+          <Redis class="h-10 w-10 rounded-sm drop-shadow-sm" />
+        </li>
       </ul>
     </div>
     <div class="mt-2">
@@ -217,6 +220,7 @@ import Yarn from "../assets/devicon/yarn.svg?inline";
 import Ubuntu from "../assets/devicon/ubuntu.svg?inline";
 import Jira from "../assets/devicon/jira.svg?inline";
 import Pandas from "../assets/devicon/pandas.svg?inline";
+import Redis from "../assets/devicon/redis.svg?inline";
 
 export default {
   components: {
@@ -250,6 +254,7 @@ export default {
     Ubuntu,
     Jira,
     Pandas,
+    Redis,
   },
 };
 </script>
