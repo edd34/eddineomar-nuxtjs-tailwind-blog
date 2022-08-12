@@ -46,7 +46,7 @@ J'ai utilisé plusieurs sources pour recenser les mots présents dans le diction
 - le site [Ylangue Free](http://ylangue.free.fr/) qui possède plusieurs lexique en ligne.
 - la page Instagram [Shimaoré Yatru](https://www.instagram.com/shimaore_yatru/)
 - différents groupes facebook d'apprentissge du shimaoré et du shibushi
-- Mon vocabulaire et ma connaissace de la langue, car je suis natif mahorais et je parle courramment la langue.
+- Mon vocabulaire et ma connaissance de la langue, car je suis natif mahorais et je parle courament la langue.
 
 # À vous !
 
