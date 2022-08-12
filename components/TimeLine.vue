@@ -22,18 +22,8 @@
             src="~assets/icon/academy.svg"
           />
         </span>
-        <h3
-          class="
-            flex
-            items-center
-            mb-1
-            text-lg
-            font-semibold
-            text-gray-900
-            dark:text-white
-          "
-        >
-          Formateur @ CCI Mayotte
+        <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+          Développeur Python + Vue (Nuxt) freelance
           <span
             class="
               bg-blue-100
@@ -46,10 +36,10 @@
               dark:bg-blue-200 dark:text-blue-800
               ml-3
             "
-            >Actuellement</span
+            >Aujourd'hui</span
           >
-        </h3>
-        <time
+                  </h3>
+                  <time
           class="
             block
             mb-2
@@ -59,14 +49,30 @@
             text-gray-400
             dark:text-gray-500
           "
-          >Janvier 2022 - Aujourd'hui</time
+          >2020 - Aujourd'hui</time
         >
-        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-          👉 Cours sur Java orienté objet pour les BTS SIO 1ère année.
-          <br />
-          👉 Titre professionnel REMN de niveau Bac+2 : Responsable d'Espace de
-          Médiation Numérique.
-        </p>
+          <p
+            class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
+          >
+            <ul>
+              <li>
+               -  Languages de programmation : Python, Solidity, Javascript (+HTML/CSS)
+              </li>
+              <li>
+                - Backend : Django, Djagno DRF, Flask
+              </li>
+              <li>
+                - CI/CD : Git, Jenkins, GitLab CI, Bitbucket, script Bash, Linux, Docker, Docker-Compose
+              </li>
+              <li>
+                - Bases de données : SQL, PostgreSQL, MySQL, MongoDB (NoSQL), Redis
+              </li>
+              <li>
+                - Autre : maitrise suite Atlassian (Jira, Bitbucket, Confluence)
+              </li>
+            </ul>
+          </p>
+        <p class="text-base font-normal text-gray-500 dark:text-gray-400"></p>
       </li>
       <li class="mb-10 ml-6">
         <span
@@ -155,8 +161,32 @@
             src="~assets/icon/academy.svg"
           />
         </span>
-        <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-          Développeur python freelance
+        <h3
+          class="
+            flex
+            items-center
+            mb-1
+            text-lg
+            font-semibold
+            text-gray-900
+            dark:text-white
+          "
+        >
+          Formateur @ CCI
+          <span
+            class="
+              bg-blue-100
+              text-blue-800 text-sm
+              font-medium
+              mr-2
+              px-2.5
+              py-0.5
+              rounded
+              dark:bg-blue-200 dark:text-blue-800
+              ml-3
+            "
+            >Temps partiel</span
+          >
         </h3>
         <time
           class="
@@ -168,9 +198,14 @@
             text-gray-400
             dark:text-gray-500
           "
-          >2020 - Aujourd'hui</time
+          >Janvier 2022 - Aujourd'hui</time
         >
-        <p class="text-base font-normal text-gray-500 dark:text-gray-400"></p>
+        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+          👉 Cours sur Java orienté objet pour les BTS SIO 1ère année.
+          <br />
+          👉 Titre professionnel REMN de niveau Bac+2 : Responsable d'Espace de
+          Médiation Numérique.
+        </p>
       </li>
       <li class="mb-10 ml-6">
         <span
@@ -283,7 +318,7 @@
           />
         </span>
         <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-          Né en 1995
+          Naissance
         </h3>
         <time
           class="
@@ -295,7 +330,7 @@
             text-gray-400
             dark:text-gray-500
           "
-          >Mayotte</time
+          >1995 - Aujourd'hui</time
         >
         <p class="text-base font-normal text-gray-500 dark:text-gray-400">
           Je ne me souviens pas avoir effectué quoi que ce soit de productif
