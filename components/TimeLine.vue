@@ -23,7 +23,7 @@
           />
         </span>
         <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-          Développeur Python + Vue (Nuxt) freelance
+          Développeur Backend Python / DevOps freelance
           <span
             class="
               bg-blue-100
