@@ -1,5 +1,5 @@
 const siteMetaInfo = {
-  title: "🚀Eddine OMAR | 👨‍💻 Développeur freelance Python 🐍",
+  title: "🚀Eddine OMAR | 👨‍💻 Développeur freelance Python 🐍 à Paris",
   author: "Eddine OMAR",
   author_image: "/author.jpg",
   position: "🐍 Python/DevOps Software engineer 👨‍💻 ⌨️",
