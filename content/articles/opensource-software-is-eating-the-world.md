@@ -5,7 +5,7 @@ author: Eddine Omar
 tags: Philosophy
 date: 2022-08-23T18:00:00.00Z
 draft: false
-image: https://unsplash.com/photos/NTyBbu66_SI/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjU5OTc2MzE2&force=true&w=640
+image: https://unsplash.com/photos/Q1p7bh3SHj8/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjYyMDEyMzk0&force=true&w=640
 ---
 
 🚨🚨🚨 Opensource software is also eating the world ! 🚨🚨🚨
