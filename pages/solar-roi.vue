@@ -101,10 +101,14 @@
           v-if="quantite_produite_par_an > this.get_property_value('kwh_conso')"
         >
           👉 Vous êtes rentables en
-          {{ seuil_renta.toFixed(2) }} an
+          {{ seuil_renta.toFixed(2) }} an*.
         </div>
         <div v-else>👉 Vous n'êtes pas encore rentable</div>
       </div>
+      <br />
+      * Attention, ce calcul est théorique, ne tient pas compte des frais
+      d'achat de composants annexes au système solaire (onduleur, cable, frais
+      de ports etc..)
     </main>
   </div>
 </template>
