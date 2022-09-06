@@ -64,41 +64,44 @@
         Résultat :
         <div>
           👉 Quantité d'énergie produite :
-          {{ quantite_produite_par_an }}
+          {{ quantite_produite_par_an.toFixed(2) }}
           kWh
         </div>
 
         <div>
           👉 Facture énergie actuelle par an :
-          {{ year_power_invoice }}
+          {{ year_power_invoice.toFixed(2) }}
           €
         </div>
 
         <div
           v-if="quantite_produite_par_an > this.get_property_value('kwh_conso')"
         >
-          👉 Vous économiserez : {{ year_power_invoice }} € par an. En gros vous
-          ne paierez pas l'énergie électrique consommée la journée dans votre
-          foyer.
+          👉 Vous économiserez : {{ year_power_invoice.toFixed(2) }} € par an.
+          En gros vous ne paierez pas l'énergie électrique consommée la journée
+          dans votre foyer.
         </div>
         <div v-else>
           👉 Vous économiserez :
-          {{ year_power_invoice - year_power_invoice_generated_power }} € par an
-          par rapport à votre facture d'énergie actuelle
+          {{ year_power_invoice_generated_power.toFixed(2) }} € par an par
+          rapport à votre facture d'énergie actuelle
         </div>
 
         <div
           v-if="quantite_produite_par_an > this.get_property_value('kwh_conso')"
         >
           👉 Si vous revendez votre énergie, vous gagnerez
-          {{ revenu_revente }} € par an
+          {{ revenu_revente.toFixed(2) }} € par an
         </div>
         <div>
           👉 Montant à investir :
-          {{ investissement_intial }} €
+          {{ investissement_intial.toFixed(2) }} €
         </div>
-        <div v-if="seuil_renta > 0">
-          👉 Vous êtes rentables en {{ seuil_renta }} an
+        <div
+          v-if="quantite_produite_par_an > this.get_property_value('kwh_conso')"
+        >
+          👉 Vous êtes rentables en
+          {{ seuil_renta.toFixed(2) }} an
         </div>
         <div v-else>👉 Vous n'êtes pas encore rentable</div>
       </div>
@@ -193,7 +196,7 @@ export default {
       return (
         (this.quantite_produite_par_an - this.get_property_value("kwh_conso")) *
         this.get_property_value("kwh_price_in_euro_sell")
-      ).toFixed(2);
+      );
     },
     quantite_produite_par_an() {
       return (
@@ -201,19 +204,19 @@ export default {
         this.get_property_value("coeff_loss") *
         this.get_property_value("solar_panel_power") *
         this.get_property_value("nb_hour_sunlight")
-      ).toFixed(2);
+      );
     },
     year_power_invoice() {
       return (
         this.get_property_value("kwh_conso") *
         this.get_property_value("kwh_price_in_euro")
-      ).toFixed(2);
+      );
     },
     year_power_invoice_generated_power() {
       return (
         this.quantite_produite_par_an *
         this.get_property_value("kwh_price_in_euro")
-      ).toFixed(2);
+      );
     },
     energy_saving() {
       return (
@@ -222,20 +225,19 @@ export default {
         this.get_property_value("solar_panel_power") *
         this.get_property_value("nb_hour_sunlight") *
         this.get_property_value("kwh_price_in_euro")
-      ).toFixed(2);
-    },
-    seuil_renta() {
-      return (
-        (this.get_property_value("nb_solar_panel") *
-          this.get_property_value("solar_panel_price")) /
-        (this.energy_saving - this.year_power_invoice)
-      ).toFixed(2);
+      );
     },
     investissement_intial() {
       return (
         this.get_property_value("nb_solar_panel") *
         this.get_property_value("solar_panel_price")
-      ).toFixed(2);
+      );
+    },
+    seuil_renta() {
+      return (
+        this.investissement_intial /
+        (this.year_power_invoice + this.revenu_revente)
+      );
     },
   },
 
