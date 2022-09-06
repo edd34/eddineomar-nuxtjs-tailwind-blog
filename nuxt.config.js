@@ -42,7 +42,7 @@ export default {
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxt/content", "@nuxtjs/svg", "@nuxt/image", "@nuxtjs/robots", '@nuxtjs/sitemap', '@nuxtjs/feed'],
+  modules: ["@nuxt/content", "@nuxtjs/svg", "@nuxt/image", "@nuxtjs/robots", '@nuxtjs/sitemap', '@nuxtjs/feed', 'nuxt-buefy',],
   svg: {
     vueSvgLoader: {
       // vue-svg-loader options
