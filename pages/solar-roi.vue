@@ -13,15 +13,14 @@
           md:text-6xl md:leading-14
         "
       >
-        Calcul ROI Panneau Solaire à Mayotte
+        Calcul ROI Panneau Solaire
       </h1>
       <p class="text-lg leading-7 text-gray-500 dark:text-gray-400">
-        Je suis constamment en train de m'autoformer, de hacker un programme ou
-        en train de développer un projet. Je vous partage une partie des projets
-        intéressants que j'ai réalisés. Côté technos : je travaille souvent avec
-        Python, Django, Flask, Git, Github, Vue/Nuxt et TailwindCSS. Il y a
-        également des projets cryptos avec web3py, solidity et plein d'autres à
-        venir !
+        L'objectif de cet outil est de permettre à chacun de simuler en
+        utilisant les principaux paramètres de choix de pour l'investissement
+        dans un système solaire. Les paramètes sont remis par défaut à chaque
+        actualisation de la page. Les paramètes par défaut sont sélectionnés
+        pour Mayotte.
       </p>
     </div>
     <main class="relative mb-auto">
@@ -62,22 +61,48 @@
             </b-table>
           </section>
         </div>
-        <div>Facture énergie an : {{ year_power_invoice }} €</div>
-        <div>Vous avez économisé : {{ energy_saving }} €</div>
+        Résultat :
         <div>
-          Montant à investir :
+          👉 Quantité d'énergie produite :
+          {{ quantite_produite_par_an }}
+          kWh
+        </div>
+
+        <div>
+          👉 Facture énergie actuelle par an :
+          {{ year_power_invoice }}
+          €
+        </div>
+
+        <div
+          v-if="quantite_produite_par_an > this.get_property_value('kwh_conso')"
+        >
+          👉 Vous économiserez : {{ year_power_invoice }} € par an. En gros vous
+          ne paierez pas l'énergie électrique consommée la journée dans votre
+          foyer.
+        </div>
+        <div v-else>
+          👉 Vous économiserez :
+          {{ year_power_invoice - year_power_invoice_generated_power }} € par an
+          par rapport à votre facture d'énergie actuelle
+        </div>
+
+        <div
+          v-if="quantite_produite_par_an > this.get_property_value('kwh_conso')"
+        >
+          👉 Si vous revendez votre énergie, vous gagnerez
+          {{ revenu_revente }} € par an
+        </div>
+        <div>
+          👉 Montant à investir :
           {{ investissement_intial }} €
         </div>
         <div v-if="seuil_renta > 0">
-          Vous êtes rentables en {{ seuil_renta }} an
+          👉 Vous êtes rentables en {{ seuil_renta }} an
         </div>
-        <div v-else>Vous n'êtes pas encore rentable</div>
+        <div v-else>👉 Vous n'êtes pas encore rentable</div>
       </div>
     </main>
-    <p class="text-m leading-7 text-gray-500 dark:text-gray-400 italic">
-      PSSST!? Au fait, ça vous dirait d'aller mettre des 🌟 dans mes projets
-      perso sur Github ?
-    </p>
   </div>
 </template>
 
@@ -88,7 +113,6 @@ export default {
       data: [
         {
           name: "kwh_conso",
-          id: 1,
           param: "kWh / an",
           description:
             "Saisissez le nombre de kWh consommés en une année dans votre foyer",
@@ -97,7 +121,6 @@ export default {
         },
         {
           name: "nb_hour_sunlight",
-          id: 2,
           param: "Nb heure ensoleillement",
           description: "Saisissez le nombre d'heure d'ensoleillement",
           valeur: 2863,
@@ -105,22 +128,13 @@ export default {
         },
         {
           name: "solar_panel_power",
-          id: 3,
           param: "Puissance panneau solaire",
-          description: "Saisissez la puissance du panneau solaire (en W)",
-          valeur: 530,
-          step: 10,
-        },
-        {
-          name: "nb_hour_sunlight",
-          id: 4,
-          param: "Nb heure ensoleillement",
-          description: "Saisissez le nombre d'heure d'ensoleillement",
-          valeur: 2863,
+          description: "Saisissez la puissance du panneau solaire (en kW)",
+          valeur: 0.53,
+          step: 0.1,
         },
         {
           name: "solar_panel_price",
-          id: 5,
           param: "Prix panneau solaire",
           description: "Saisissez prix du panneau solaire",
           valeur: 121.9,
@@ -128,7 +142,6 @@ export default {
         },
         {
           name: "area_solar_panel",
-          id: 6,
           param: "Surface du panneau solaire",
           description: "Saisissez la surface du panneau solaire en m²",
           valeur: 2.19,
@@ -136,7 +149,6 @@ export default {
         },
         {
           name: "coeff_loss",
-          id: 7,
           param: "Coefficient de pertes",
           description:
             "Coefficient qui correspond aux pertes dans les câbles et dû à la conversion de l'énergie",
@@ -148,48 +160,81 @@ export default {
           id: 8,
           param: "Prix du kWh en euro",
           description: "Saissez le prix moyen du kWh en vigueur en euro",
-          valeur: 0.14,
+          valeur: 0.09,
+          step: 0.01,
+        },
+        {
+          name: "kwh_price_in_euro_sell",
+          id: 8,
+          param: "Prix du rachat du kWh",
+          description:
+            "Saissez le prix moyen du rachat de l'excédent du kWh par votre fournisseur d'énergie",
+          valeur: 0.18,
           step: 0.01,
         },
         {
           name: "nb_solar_panel",
-          id: 9,
           param: "Nb panneaux solaires",
           description:
             "Saissez le nombre de panneaux solaire dans votre installation",
-          valeur: 4,
+          valeur: 5,
           step: 1,
         },
       ],
     };
   },
+  methods: {
+    get_property_value(property_tag) {
+      return this.data.find((x) => x.name == property_tag).valeur;
+    },
+  },
   computed: {
+    revenu_revente() {
+      return (
+        (this.quantite_produite_par_an - this.get_property_value("kwh_conso")) *
+        this.get_property_value("kwh_price_in_euro_sell")
+      ).toFixed(2);
+    },
+    quantite_produite_par_an() {
+      return (
+        this.get_property_value("nb_solar_panel") *
+        this.get_property_value("coeff_loss") *
+        this.get_property_value("solar_panel_power") *
+        this.get_property_value("nb_hour_sunlight")
+      ).toFixed(2);
+    },
     year_power_invoice() {
       return (
-        this.data.find((x) => x.name == "kwh_conso").valeur *
-        this.data.find((x) => x.name == "kwh_price_in_euro").valeur
+        this.get_property_value("kwh_conso") *
+        this.get_property_value("kwh_price_in_euro")
+      ).toFixed(2);
+    },
+    year_power_invoice_generated_power() {
+      return (
+        this.quantite_produite_par_an *
+        this.get_property_value("kwh_price_in_euro")
       ).toFixed(2);
     },
     energy_saving() {
       return (
-        ((this.data.find((x) => x.name == "nb_solar_panel").valeur *
-          this.data.find((x) => x.name == "solar_panel_power").valeur) /
-          1000) *
-        this.data.find((x) => x.name == "nb_hour_sunlight").valeur *
-        this.data.find((x) => x.name == "kwh_price_in_euro").valeur
+        this.get_property_value("nb_solar_panel") *
+        this.get_property_value("coeff_loss") *
+        this.get_property_value("solar_panel_power") *
+        this.get_property_value("nb_hour_sunlight") *
+        this.get_property_value("kwh_price_in_euro")
       ).toFixed(2);
     },
     seuil_renta() {
       return (
-        (this.data.find((x) => x.name == "nb_solar_panel").valeur *
-          this.data.find((x) => x.name == "solar_panel_price").valeur) /
+        (this.get_property_value("nb_solar_panel") *
+          this.get_property_value("solar_panel_price")) /
         (this.energy_saving - this.year_power_invoice)
       ).toFixed(2);
     },
     investissement_intial() {
       return (
-        this.data.find((x) => x.name == "nb_solar_panel").valeur *
-        this.data.find((x) => x.name == "solar_panel_price").valeur
+        this.get_property_value("nb_solar_panel") *
+        this.get_property_value("solar_panel_price")
       ).toFixed(2);
     },
   },
