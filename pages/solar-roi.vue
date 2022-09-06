@@ -54,8 +54,8 @@
                 <template v-slot="props">
                   <b-numberinput
                     v-model="props.row.valeur"
+                    :step="props.row.step"
                     controls-position="compact"
-                    :editable="false"
                   ></b-numberinput>
                 </template>
               </b-table-column>
@@ -68,7 +68,10 @@
           Montant à investir :
           {{ investissement_intial }} €
         </div>
-        <div>Vous êtes rentables en {{ seuil_renta }} an</div>
+        <div v-if="seuil_renta > 0">
+          Vous êtes rentables en {{ seuil_renta }} an
+        </div>
+        <div v-else>Vous n'êtes pas encore rentable</div>
       </div>
     </main>
     <p class="text-m leading-7 text-gray-500 dark:text-gray-400 italic">
@@ -90,6 +93,7 @@ export default {
           description:
             "Saisissez le nombre de kWh consommés en une année dans votre foyer",
           valeur: 5000,
+          step: 100,
         },
         {
           name: "nb_hour_sunlight",
@@ -97,6 +101,7 @@ export default {
           param: "Nb heure ensoleillement",
           description: "Saisissez le nombre d'heure d'ensoleillement",
           valeur: 2863,
+          step: 50,
         },
         {
           name: "solar_panel_power",
@@ -104,6 +109,7 @@ export default {
           param: "Puissance panneau solaire",
           description: "Saisissez la puissance du panneau solaire (en W)",
           valeur: 530,
+          step: 10,
         },
         {
           name: "nb_hour_sunlight",
@@ -118,6 +124,7 @@ export default {
           param: "Prix panneau solaire",
           description: "Saisissez prix du panneau solaire",
           valeur: 121.9,
+          step: 20,
         },
         {
           name: "area_solar_panel",
@@ -125,6 +132,7 @@ export default {
           param: "Surface du panneau solaire",
           description: "Saisissez la surface du panneau solaire en m²",
           valeur: 2.19,
+          step: 0.1,
         },
         {
           name: "coeff_loss",
@@ -133,6 +141,7 @@ export default {
           description:
             "Coefficient qui correspond aux pertes dans les câbles et dû à la conversion de l'énergie",
           valeur: 0.7,
+          step: 0.01,
         },
         {
           name: "kwh_price_in_euro",
@@ -140,6 +149,7 @@ export default {
           param: "Prix du kWh en euro",
           description: "Saissez le prix moyen du kWh en vigueur en euro",
           valeur: 0.14,
+          step: 0.01,
         },
         {
           name: "nb_solar_panel",
@@ -148,6 +158,7 @@ export default {
           description:
             "Saissez le nombre de panneaux solaire dans votre installation",
           valeur: 4,
+          step: 1,
         },
       ],
     };
