@@ -31,7 +31,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ["@nuxt/postcss8", "@nuxt/image", '~/modules/siteMapGenerator'],
+  buildModules: ["@nuxt/postcss8", "@nuxt/image", '~/modules/siteMapGenerator', 'nuxt-buefy'],
   vite: {
     /* options for vite */
     // ssr: true // enable unstable server-side rendering for development (false by default)
@@ -68,13 +68,13 @@ export default {
 
     postcss: {
       plugins: {
-        "postcss-custom-properties": false,
-        'postcss-preset-env': {
-          features:
-          {
-            'custom-properties': false
-          }
-        },
+        // "postcss-custom-properties": false,
+        // 'postcss-preset-env': {
+        //   features:
+        //   {
+        //     'custom-properties': false
+        //   }
+        // },
         tailwindcss: {},
         autoprefixer: {},
       },
