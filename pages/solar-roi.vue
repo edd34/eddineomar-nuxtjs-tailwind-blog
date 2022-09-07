@@ -100,8 +100,10 @@
         <div>
           👉 Surface de l'installation :
           {{
-            this.get_property_value("nb_solar_panel") *
-            this.get_property_value("area_solar_panel")
+            (
+              this.get_property_value("nb_solar_panel") *
+              this.get_property_value("area_solar_panel")
+            ).toFixed(2)
           }}
           m²
         </div>
