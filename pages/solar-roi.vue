@@ -114,9 +114,9 @@
         <div v-else>👉 Vous n'êtes pas encore rentable</div>
       </div>
       <br />
-      * Attention, ce calcul est théorique, ne tient pas compte des frais
+      * Attention, ce calcul est indicatif, ne tient pas compte des frais
       d'achat de composants annexes au système solaire (onduleur, cable, frais
-      de ports etc..)
+      de ports etc..) ni des éléments fiscaux.
     </main>
   </div>
 </template>
