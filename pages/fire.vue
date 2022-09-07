@@ -71,7 +71,7 @@
       </div>
       Résultat :
       <div>
-        Il vous faut accumuler
+        👉 Il vous faut accumuler
         <b>
           {{
             this.format_euro(
@@ -96,15 +96,31 @@
         >.
       </div>
       <div>
-        Vous pourrez vivre de vos rentes dans
+        👉 Vous pourrez vivre de vos rentes dans
         <b> {{ this.format_number(this.fire.year) }} ans </b>.
       </div>
       <div>
-        Vous aurez accumulé un capital
-        <b>{{ this.format_euro(this.fire.capital) }} </b>.
+        👉 Vous aurez accumulé un capital
+        <b>{{ this.format_euro(this.fire.capital) }} au moment du FIRE.</b>.
+      </div>
+      <div>
+        👉 Vous atteindrez
+        <b>
+          {{
+            new Intl.NumberFormat("fr-FR", {
+              style: "currency",
+              notation: "compact",
+              compactDisplay: "short",
+              currency: "EUR",
+            }).format(this.get_property_value("capital_dream"))
+          }}
+        </b>
+        de capital dans
+        <b>{{ this.format_number(this.fire_goal.year) }} ans</b>.
       </div>
       <br />
-      * Attention, ce calcul est indicatif.
+      * Attention, ce calcul est indicatif. Investir comporte des risques dont
+      la perte total du capital investi.
     </main>
   </div>
 </template>
@@ -144,6 +160,14 @@ export default {
           valeur: 0,
           step: 1000,
         },
+        {
+          name: "capital_dream",
+          param: "Capital de rêve",
+          description:
+            "Indiquez le montant du capital dont vous souhaitez obtenir.",
+          valeur: 100000,
+          step: 10000,
+        },
       ],
     };
   },
@@ -181,6 +205,23 @@ export default {
         (this.get_property_value("roi_per_year") / 100) * capital <
         this.get_property_value("charges") * 12
       ) {
+        n += 1;
+        capital =
+          capital * (1 + this.get_property_value("roi_per_year") / 100) +
+          this.saving_per_year;
+      }
+
+      return {
+        year: n,
+        capital: capital,
+        roi_capital: (capital * this.get_property_value("roi_per_year")) / 100,
+      };
+    },
+    fire_goal() {
+      var n = 1;
+      var u0 = this.get_property_value("inital_amount");
+      var capital = u0;
+      while (capital < this.get_property_value("capital_dream")) {
         n += 1;
         capital =
           capital * (1 + this.get_property_value("roi_per_year") / 100) +
