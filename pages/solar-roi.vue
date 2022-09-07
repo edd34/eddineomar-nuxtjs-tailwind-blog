@@ -64,54 +64,61 @@
         Résultat :
         <div>
           👉 Quantité d'énergie produite :
-          {{ quantite_produite_par_an.toFixed(2) }}
-          kWh
+          <b>
+            {{ this.format_number(quantite_produite_par_an) }}
+            kWh
+          </b>
         </div>
 
         <div>
           👉 Facture énergie actuelle par an :
-          {{ year_power_invoice.toFixed(2) }}
-          €
+          <b>
+            {{ this.format_euro(year_power_invoice) }}
+          </b>
         </div>
 
         <div
           v-if="quantite_produite_par_an > this.get_property_value('kwh_conso')"
         >
-          👉 Vous économiserez : {{ year_power_invoice.toFixed(2) }} € par an.
-          En gros vous ne paierez pas l'énergie électrique consommée la journée
-          dans votre foyer.
+          👉 Vous économiserez :
+          <b> {{ this.format_euro(year_power_invoice) }} par an</b>. En gros
+          vous ne paierez pas l'énergie électrique consommée la journée dans
+          votre foyer.
         </div>
         <div v-else>
           👉 Vous économiserez :
-          {{ year_power_invoice_generated_power.toFixed(2) }} € par an par
-          rapport à votre facture d'énergie actuelle
+          <b>
+            {{ this.format_euro(year_power_invoice_generated_power) }} par an </b
+          >par rapport à votre facture d'énergie actuelle
         </div>
 
         <div
           v-if="quantite_produite_par_an > this.get_property_value('kwh_conso')"
         >
           👉 Si vous revendez votre énergie, vous gagnerez
-          {{ revenu_revente.toFixed(2) }} € par an
+          <b> {{ this.format_euro(revenu_revente) }} par an.</b>
         </div>
         <div>
           👉 Montant à investir :
-          {{ investissement_intial.toFixed(2) }} €
+          <b> {{ this.format_euro(investissement_intial) }}</b>
         </div>
         <div>
           👉 Surface de l'installation :
-          {{
-            (
-              this.get_property_value("nb_solar_panel") *
-              this.get_property_value("area_solar_panel")
-            ).toFixed(2)
-          }}
-          m²
+          <b>
+            {{
+              this.format_number(
+                this.get_property_value("nb_solar_panel") *
+                  this.get_property_value("area_solar_panel")
+              )
+            }}
+            m²
+          </b>
         </div>
         <div
           v-if="quantite_produite_par_an > this.get_property_value('kwh_conso')"
         >
           👉 Vous êtes rentables en
-          {{ seuil_renta.toFixed(2) }} an*.
+          <b> {{ this.format_number(seuil_renta) }} an</b>*.
         </div>
         <div v-else>👉 Vous n'êtes pas encore rentable</div>
       </div>
@@ -203,6 +210,17 @@ export default {
   methods: {
     get_property_value(property_tag) {
       return this.data.find((x) => x.name == property_tag).valeur;
+    },
+    format_euro(num) {
+      return new Intl.NumberFormat(`fr-FR`, {
+        currency: `EUR`,
+        style: "currency",
+      }).format(num);
+    },
+    format_number(num) {
+      return new Intl.NumberFormat(`fr-FR`, {
+        maximumFractionDigits: 2,
+      }).format(num);
     },
   },
   computed: {
