@@ -135,7 +135,7 @@ export default {
           param: "Salaire / mois",
           description: "Indiquez vitre salaire mensuel net.",
           valeur: 2500,
-          step: 50,
+          step: 100,
         },
         {
           name: "charges",
