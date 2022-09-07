@@ -5,4 +5,9 @@ const menu = [
   { name: "Ressources", path: "/ressources" },
 ];
 
-export default menu;
+const dropdown_menu_tools = [
+  { name: "Solar Power calculator", path: "/solar-roi" },
+  { name: "Fire calculator", path: "/fire" },
+];
+
+export default { menu, dropdown_menu_tools };
