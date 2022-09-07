@@ -87,9 +87,9 @@
         avec un placement à
         <b
           >{{
-            new Intl.NumberFormat("en-US", {
-              style: "percent",
-            }).format(this.get_property_value("roi_per_year") / 100)
+            this.format_percentage(
+              this.get_property_value("roi_per_year") / 100
+            )
           }}
 
           par an</b
@@ -184,6 +184,11 @@ export default {
     format_number(num) {
       return new Intl.NumberFormat(`fr-FR`, {
         maximumFractionDigits: 2,
+      }).format(num);
+    },
+    format_percentage(num) {
+      return new Intl.NumberFormat("fr-FR", {
+        style: "percent",
       }).format(num);
     },
   },
