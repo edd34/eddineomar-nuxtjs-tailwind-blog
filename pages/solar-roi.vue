@@ -97,6 +97,14 @@
           👉 Montant à investir :
           {{ investissement_intial.toFixed(2) }} €
         </div>
+        <div>
+          👉 Surface de l'installation :
+          {{
+            this.get_property_value("nb_solar_panel") *
+            this.get_property_value("area_solar_panel")
+          }}
+          m²
+        </div>
         <div
           v-if="quantite_produite_par_an > this.get_property_value('kwh_conso')"
         >
