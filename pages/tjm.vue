@@ -108,13 +108,6 @@ export default {
           step: 1,
         },
         {
-          name: "nb_jour_formations",
-          param: "Nombre de jours de formations",
-          description: "Saisissez le montant de jours ouvrés par an.",
-          valeur: 20,
-          step: 1,
-        },
-        {
           name: "conges",
           param: "Nb de jour non travailles",
           description:
