@@ -94,13 +94,6 @@ export default {
           step: 50,
         },
         {
-          name: "TJM_formation",
-          param: "TJM Formation",
-          description: "Indiquez votre TJM pour les formations",
-          valeur: 1000,
-          step: 100,
-        },
-        {
           name: "nb_jour_ouvres",
           param: "Nombre de jours ouvrés",
           description: "Saisissez le montant de jours ouvrés par an.",
