@@ -66,17 +66,10 @@
       </div>
       <div>
         👉 Vous réaliserez un CA net de
-        <b> {{ this.format_euro(this.CA_an_net("rate_micro")) }} / an</b> en
-        micro entreprise. Soit
-        <b>
-          {{ this.format_euro(this.CA_mois_net("rate_micro")) }} net / mois</b
-        >
+        <b> {{ this.format_euro(this.CA_an_net("rate_micro")) }} / an</b>. Soit
+        <b> {{ this.format_euro(this.CA_mois_net("rate_micro")) }} net / mois</b
+        >.
       </div>
-      <!-- <div>
-        👉 Vous réaliserez un CA net de
-        <b> {{ this.format_euro(this.CA_an_net("rate_eurl_sarl")) }} / an</b> en
-        société.
-      </div> -->
     </main>
   </div>
 </template>
@@ -111,17 +104,8 @@ export default {
         {
           name: "rate_micro",
           param: "Taux de prélèvement",
-          description:
-            "Indiquez le montant du capital dont vous souhaitez obtenir.",
+          description: "Indiquez le taux de prélèvement.",
           valeur: 0.242,
-          step: 0.01,
-        },
-        {
-          name: "rate_eurl_sarl",
-          param: "Taux de prélèvement",
-          description:
-            "Indiquez le montant du capital dont vous souhaitez obtenir.",
-          valeur: 0.44,
           step: 0.01,
         },
       ],
