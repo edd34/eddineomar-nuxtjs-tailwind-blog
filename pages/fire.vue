@@ -133,7 +133,7 @@ export default {
         {
           name: "salaire_mensuel",
           param: "Salaire / mois",
-          description: "Indiquez vitre salaire mensuel net.",
+          description: "Indiquez votre salaire mensuel net.",
           valeur: 2500,
           step: 100,
         },
@@ -156,7 +156,7 @@ export default {
           name: "inital_amount",
           param: "Somme de départ",
           description:
-            "Indiquez le montant de l'épargne dont vous disposez déjà.",
+            "Indiquez le montant de l'épargne que vous disposez déjà.",
           valeur: 0,
           step: 1000,
         },

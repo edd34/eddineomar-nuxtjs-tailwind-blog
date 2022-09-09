@@ -6,8 +6,9 @@ const menu = [
 ];
 
 const dropdown_menu_tools = [
-  { name: "Solar Power calculator", path: "/solar-roi" },
-  { name: "Fire calculator", path: "/fire" },
+  { name: "Simulation installation photovoltaïque", path: "/solar-roi" },
+  { name: "Simulateur FIRE", path: "/fire" },
+  { name: "Simulateur TJM", path: "/tjm" },
 ];
 
 export default { menu, dropdown_menu_tools };

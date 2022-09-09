@@ -13,7 +13,7 @@
           md:text-6xl md:leading-14
         "
       >
-        Calcul ROI Panneau Solaire
+        Simulation ROI Panneau Solaire
       </h1>
       <p class="text-lg leading-7 text-gray-500 dark:text-gray-400">
         L'objectif de cet outil est de permettre à chacun de simuler en
