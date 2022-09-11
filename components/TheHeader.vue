@@ -41,7 +41,7 @@
             :active="route_match(elem.path)"
           >
             <div v-if="route_match(elem.path)">
-              <b>{{ elem.name }}</b>
+              <b class="is-active">{{ elem.name }}</b>
             </div>
             <div v-else>{{ elem.name }}</div>
           </b-navbar-item>
@@ -52,7 +52,7 @@
               :href="elem.path"
               :active="route_match(elem.path)"
             >
-              {{ elem.name }}
+              <b class="is-active">{{ elem.name }}</b>
             </b-navbar-item>
           </b-navbar-dropdown>
         </template>
@@ -81,7 +81,9 @@ export default {
 </script>
 
 <style>
-.nuxt-link-exact-active {
-  @apply text-indigo-600;
+.is-active {
+  color: #4338ca;
 }
+/* .nuxt-link-exact-active {
+} */
 </style>
