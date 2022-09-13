@@ -1,5 +1,5 @@
 module.exports = {
-  darkMode: "class",
+  darkMode: "true",
   content: [
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",

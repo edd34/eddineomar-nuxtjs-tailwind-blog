@@ -52,7 +52,10 @@
               :href="elem.path"
               :active="route_match(elem.path)"
             >
-              <b class="is-active">{{ elem.name }}</b>
+              <div v-if="route_match(elem.path)">
+                <b class="is-active">{{ elem.name }}</b>
+              </div>
+              <div v-else>{{ elem.name }}</div>
             </b-navbar-item>
           </b-navbar-dropdown>
         </template>
