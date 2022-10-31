@@ -16,7 +16,7 @@
       </h1>
       <p class="text-lg text-slate-700 dark:text-slate-400">
         Tous les derniers articles en lien avec Python, Git, le développement
-        logiciel...
+        logiciel, développement personnel pour les dev...
       </p>
     </header>
     <div class="space-y-16 mx-auto max-w-7xl">
