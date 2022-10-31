@@ -173,7 +173,7 @@ export default {
   },
   methods: {
     get_property_value(property_tag) {
-      return this.data.find((x) => x.name == property_tag).valeur;
+      return this.data.find((x) => x.name == property_tag).valeur || 0;
     },
     format_euro(num) {
       return new Intl.NumberFormat(`fr-FR`, {
@@ -200,7 +200,7 @@ export default {
       );
     },
     saving_per_year() {
-      return this.saving_per_month * 12;
+      return this.saving_per_month * 12 || 0;
     },
     fire() {
       var n = 1;
