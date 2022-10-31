@@ -1,5 +1,5 @@
 ---
-title: "Internet est un outil magnifique !"
+title: "Pro tip adive : un bon équilibre de vie !"
 description: "💡 PTA (Pro Tip Advice) : Veillez à garder un équilibre de vie sain pour performer et pour votre bien être (physique et mental)"
 author: Eddine Omar
 tags: google internet
