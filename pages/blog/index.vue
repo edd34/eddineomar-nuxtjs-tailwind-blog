@@ -55,7 +55,7 @@ export default {
     };
   },
   head: {
-    title: "🚀Eddine Omar - Lead dev Python / DevOps | Blogs 📰",
+    title: "🚀Eddine Omar | Blogs 📰",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
