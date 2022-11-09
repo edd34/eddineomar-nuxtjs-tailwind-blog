@@ -11,12 +11,19 @@ image: https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-4.0
 Pro tip du jour : maitrisez vos outils et leurs arcanes !
 
 - Maitrise ton IDE et ses raccourcis !
+
 - Maitrise ton VCS (Git+Github/Gitlab) !
+
 - Maitrise ton terminal !
+
 - Maitrise ton OS (les vrais utilisent Linux) !
+
 - C'est évident : Maitrise ton language de programmation et ton framework (va le plus loin possible) !
+
 - Maitrise la base de code sur laquelle tu développes !
+
 - Maitrise le produit que tu développes (fonctionnellement) !
+
 - Maitrise tout ce que tu touches et surtout ce qui est sous ta responsabilité (mais vois plus large) !
 
 N'oublie pas que, c'est toi le dev, qui programme la machine et l'application !
