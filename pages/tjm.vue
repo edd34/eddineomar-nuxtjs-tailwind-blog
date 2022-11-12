@@ -44,6 +44,14 @@
                   column.label
                 }}</b-tooltip>
               </template>
+              <template v-slot="props">{{ props.row.description }}</template>
+            </b-table-column>
+            <b-table-column field="user.valeur" label="Valeur">
+              <template v-slot:header="{ column }">
+                <b-tooltip :label="column.label" append-to-body dashed>{{
+                  column.label
+                }}</b-tooltip>
+              </template>
               <template v-slot="props">
                 <b-numberinput
                   v-model="props.row.valeur"
