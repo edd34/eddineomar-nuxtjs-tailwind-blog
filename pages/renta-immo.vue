@@ -167,7 +167,7 @@ export default {
       return new Intl.NumberFormat("fr-FR", {
         style: "percent",
         minimumFractionDigits: 0,
-        maximumFractionDigits: 3
+        maximumFractionDigits: 2
       }).format(num);
     },
   },
