@@ -82,7 +82,7 @@
       </div>
       <div>
         <b>
-          👉 Rentabilité nette = {{this.format_percentage(this.rentabilte_nette)}}
+          👉 Rentabilité nette = {{this.format_percentage(this.rentabilite_nette)}}
         </b>
       </div>
     </main>
@@ -177,7 +177,7 @@ export default {
         this.get_property_value("loyer")*12
       );
     },
-    rentabilte_nette() {
+    rentabilite_nette() {
       return (
         (this.get_property_value("loyer")*12 - this.get_property_value("taxe_fonciere") - this.get_property_value("charges_copro")) 
         / 
