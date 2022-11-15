@@ -24,6 +24,7 @@ export default {
   // ...
   plugins: [
     '~/plugins/disqus',
+    '~/plugins/prism'
   ],
 
 
@@ -42,7 +43,7 @@ export default {
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxt/content", "@nuxtjs/svg", "@nuxt/image", "@nuxtjs/robots", '@nuxtjs/sitemap', '@nuxtjs/feed', 'nuxt-buefy',],
+  modules: ["@nuxt/content", "@nuxtjs/svg", "@nuxt/image", "@nuxtjs/robots", '@nuxtjs/sitemap', '@nuxtjs/feed'],
   svg: {
     vueSvgLoader: {
       // vue-svg-loader options
