@@ -39,7 +39,7 @@ Voici le diagramme de séquence de l'algorithme dont nous allons implémenter.
 ![Diagramme de séquence FizzBuzz](/uploads/FizzBuzz.png  "Title")
 # Implémentation
 ## Python
-```code
+```python
 N=20
 for i in range(20):
   if i%3 == 0 and i%5 == 0:
