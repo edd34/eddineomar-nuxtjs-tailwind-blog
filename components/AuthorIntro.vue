@@ -1,20 +1,15 @@
 <template>
   <div class="mb-6">
     <h2
-      class="
-        mt-6
-        text-4xl text-gray-700
-        font-bold
-        capitalize
-        dark:text-blue-200
-      "
+      class="mt-6 text-4xl text-gray-700 font-bold capitalize dark:text-blue-200"
     >
       👋 Salut !
     </h2>
     <br />
 
     <p class="text-justify">
-      Moi c'est Eddine, développeur freelance spécialisé en Python, enchanté.
+      Moi c'est Eddine, ingénieur logiciel spécialisé en Python (backend),
+      enchanté.
     </p>
 
     <p />

@@ -23,7 +23,7 @@
           />
         </span>
         <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-          Développeur Backend Python / DevOps freelance
+          Lead Développeur Backend Python / DevOps @DocAxess
           <span
             class="
               bg-blue-100
@@ -38,6 +38,65 @@
             "
             >Aujourd'hui</span
           >
+                  </h3>
+                  <time
+          class="
+            block
+            mb-2
+            text-sm
+            font-normal
+            leading-none
+            text-gray-400
+            dark:text-gray-500
+          "
+          >Janvier 2023 - Mars 2024</time
+        >
+          <p
+            class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
+          >
+            <ul>
+              <li>
+               -  Languages de programmation : Python, Solidity, Javascript (+HTML/CSS)
+              </li>
+              <li>
+                - Backend : Django, Djagno DRF, Flask
+              </li>
+              <li>
+                - CI/CD : Git, Jenkins, GitLab CI, Bitbucket, script Bash, Linux, Docker, Docker-Compose
+              </li>
+              <li>
+                - Bases de données : SQL, PostgreSQL, MySQL, MongoDB (NoSQL), Redis
+              </li>
+              <li>
+                - Autre : maitrise suite Atlassian (Jira, Bitbucket, Confluence)
+              </li>
+            </ul>
+          </p>
+        <p class="text-base font-normal text-gray-500 dark:text-gray-400"></p>
+      </li>
+      <li class="mb-10 ml-6">
+        <span
+          class="
+            flex
+            absolute
+            -left-3
+            justify-center
+            items-center
+            w-6
+            h-6
+            bg-blue-200
+            rounded-full
+            ring-8 ring-white
+            dark:ring-gray-900 dark:bg-blue-900
+          "
+        >
+          <img
+            class="w-3 h-3 text-blue-600 dark:text-blue-400"
+            src="~assets/icon/academy.svg"
+          />
+        </span>
+        <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+          Développeur Backend Python / DevOps freelance
                   </h3>
                   <time
           class="
@@ -106,7 +165,7 @@
             dark:text-white
           "
         >
-          Mentor DA Python @ OpenClassRooms
+          Formateur @ CCI
           <span
             class="
               bg-blue-100
@@ -119,7 +178,7 @@
               dark:bg-blue-200 dark:text-blue-800
               ml-3
             "
-            >Aujourd'hui</span
+            >Temps partiel</span
           >
         </h3>
         <time
@@ -132,12 +191,13 @@
             text-gray-400
             dark:text-gray-500
           "
-          >2021 - Aujourd'hui</time
+          >2022 - 2023</time
         >
         <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-          Formation Développeur d'Application Python, j'aide les élèves dans
-          leurs parcours d'apprentissage du langage Python à l'aide de séance de
-          mentorat.
+          👉 Cours sur Java orienté objet pour les BTS SIO 1ère année.
+          <br />
+          👉 Titre professionnel REMN de niveau Bac+2 : Responsable d'Espace de
+          Médiation Numérique.
         </p>
       </li>
       <li class="mb-10 ml-6">
@@ -172,21 +232,7 @@
             dark:text-white
           "
         >
-          Formateur @ CCI
-          <span
-            class="
-              bg-blue-100
-              text-blue-800 text-sm
-              font-medium
-              mr-2
-              px-2.5
-              py-0.5
-              rounded
-              dark:bg-blue-200 dark:text-blue-800
-              ml-3
-            "
-            >Temps partiel</span
-          >
+          Mentor DA Python @ OpenClassRooms
         </h3>
         <time
           class="
@@ -198,13 +244,12 @@
             text-gray-400
             dark:text-gray-500
           "
-          >Janvier 2022 - Aujourd'hui</time
+          >2021 - 2023</time
         >
         <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-          👉 Cours sur Java orienté objet pour les BTS SIO 1ère année.
-          <br />
-          👉 Titre professionnel REMN de niveau Bac+2 : Responsable d'Espace de
-          Médiation Numérique.
+          Formation Développeur d'Application Python, j'aide les élèves dans
+          leurs parcours d'apprentissage du langage Python à l'aide de séance de
+          mentorat.
         </p>
       </li>
       <li class="mb-10 ml-6">
@@ -294,47 +339,6 @@
           ingénieurs au futur monde de l’ingénierie, au travers de cours
           théoriques et pratiques dans divers domaines tels que la mécanique,
           l’informatique, les mathématiques et la physique.
-        </p>
-      </li>
-      <li class="mb-10 ml-6">
-        <span
-          class="
-            flex
-            absolute
-            -left-3
-            justify-center
-            items-center
-            w-6
-            h-6
-            bg-blue-200
-            rounded-full
-            ring-8 ring-white
-            dark:ring-gray-900 dark:bg-blue-900
-          "
-        >
-          <img
-            class="w-3 h-3 text-blue-600 dark:text-blue-400"
-            src="~assets/icon/home.svg"
-          />
-        </span>
-        <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-          Naissance
-        </h3>
-        <time
-          class="
-            block
-            mb-2
-            text-sm
-            font-normal
-            leading-none
-            text-gray-400
-            dark:text-gray-500
-          "
-          >1995 - Aujourd'hui</time
-        >
-        <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-          Je ne me souviens pas avoir effectué quoi que ce soit de productif
-          cette année, mais peu importe.
         </p>
       </li>
     </ol>
