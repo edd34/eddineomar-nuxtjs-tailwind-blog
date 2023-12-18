@@ -57,6 +57,25 @@
           >CV - en</a
         >
       </div>
+      <div class="my-2 text-gray-600 flex dark:text-blue-200">
+        <div class="mr-1" />
+        <a
+          href="http://www.catb.org/~esr/faqs/hacker-howto.html"
+          target="_blank"
+        >
+          <i> How To Become A Hacker </i>
+        </a>
+      </div>
+      <div class="my-2 text-gray-600 flex dark:text-blue-200">
+        <div class="mr-1" />
+        <a
+          href="http://www.catb.org/~esr/faqs/smart-questions.html"
+          target="_blank"
+          download=""
+        >
+          <i> How to Ask Smart Questions </i>
+        </a>
+      </div>
     </div>
   </div>
 </template>
