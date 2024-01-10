@@ -106,7 +106,8 @@ export default {
         },
         {
           name: "frais_notaire",
-          param: "Frais notaire : 8% ancien, 3% neuf",
+          param: "Frais notaire (%)",
+          description: "Saisissez les frais de notaires : 8% ancien, 3% neuf",
           valeur: 8,
           step: 1,
         },
@@ -147,7 +148,7 @@ export default {
       var result =
         (this.taux_interet_mensuel *
           (this.get_property_value("montant_total") *
-            (1 + this.get_property_value("frais_notaire")/100) -
+            (1 + this.get_property_value("frais_notaire") / 100) -
             this.get_property_value("apport"))) /
         (1 - (1 + this.taux_interet_mensuel) ** -this.total_paiement);
       return result;
@@ -159,7 +160,7 @@ export default {
       return (
         this.cout_total_pret -
         (this.get_property_value("montant_total") *
-          (1 + this.get_property_value("frais_notaire")/100) -
+          (1 + this.get_property_value("frais_notaire") / 100) -
           this.get_property_value("apport"))
       );
     },
