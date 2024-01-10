@@ -10,6 +10,7 @@ const dropdown_menu_tools = [
   { name: "Simulateur FIRE", path: "/fire" },
   { name: "Simulateur TJM", path: "/tjm" },
   { name: "Simulateur Rentabilité immobilier locatif", path: "/renta-immo" },
+  { name: "Calculatrice cout crédit immo", path: "/cout-credit" },
 ];
 
 export default { menu, dropdown_menu_tools };
