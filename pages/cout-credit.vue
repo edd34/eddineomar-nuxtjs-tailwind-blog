@@ -65,6 +65,12 @@
       <div>
         👉 Coût total intérêts = {{ this.format_euro(this.cout_total_interet) }}
       </div>
+      <div>
+        👉 Rentable à partir de
+        {{ this.floatToYearsMonthsDays(this.duree_rentabilite).years }} ans et
+        {{ this.floatToYearsMonthsDays(this.duree_rentabilite).months + 1 }}
+        mois
+      </div>
     </main>
   </div>
 </template>
@@ -93,8 +99,8 @@ export default {
           param: "Taux d'intérêt",
           description:
             "Saisissez le taux d'intérêt accordé par la banque en %.",
-          valeur: 4.5,
-          step: 0.7,
+          valeur: 3.8,
+          step: 0.2,
         },
         {
           name: "duree_pret",
@@ -136,6 +142,14 @@ export default {
         maximumFractionDigits: 2,
       }).format(num);
     },
+    floatToYearsMonthsDays(floatValue) {
+      const totalDays = floatValue * 365.25;
+      const years = Math.floor(totalDays / 365.25);
+      const remainingDays = totalDays - years * 365.25;
+      const months = Math.floor(remainingDays / 30.44);
+      const days = remainingDays - months * 30.44;
+      return { years, months, days };
+    },
   },
   computed: {
     taux_interet_mensuel() {
@@ -164,10 +178,14 @@ export default {
           this.get_property_value("apport"))
       );
     },
+    duree_rentabilite() {
+      var result = this.cout_total_interet / this.paiement_mensuel / 12;
+      return result;
+    },
   },
 
   head: {
-    title: "🚀 Eddine OMAR | 🚧 Calculatrice TJM 🚧",
+    title: "🚀 Eddine OMAR | Calulatrice coût crédit",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
