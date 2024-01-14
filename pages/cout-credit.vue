@@ -66,6 +66,10 @@
         👉 Coût total intérêts = {{ this.format_euro(this.cout_total_interet) }}
       </div>
       <div>
+        👉 Coût total assurance =
+        {{ this.format_euro(this.cout_assurance_total) }}
+      </div>
+      <div>
         👉 Rentable à partir de
         {{ this.floatToYearsMonthsDays(this.duree_rentabilite).years }} ans et
         {{ this.floatToYearsMonthsDays(this.duree_rentabilite).months + 1 }}
@@ -116,6 +120,13 @@ export default {
           description: "Saisissez les frais de notaires : 8% ancien, 3% neuf",
           valeur: 8,
           step: 1,
+        },
+        {
+          name: "taux_assurance",
+          param: "Taux d'assurance (%)",
+          description: "Saisissez le taux d'assurance en %.",
+          valeur: 0.36,
+          step: 0.05,
         },
       ],
     };
@@ -178,8 +189,20 @@ export default {
           this.get_property_value("apport"))
       );
     },
+    cout_assurance_total() {
+      var result =
+        (((this.get_property_value("montant_total") -
+          this.get_property_value("apport")) *
+          this.get_property_value("taux_assurance")) /
+          100) *
+        this.get_property_value("duree_pret");
+      return result;
+    },
     duree_rentabilite() {
-      var result = this.cout_total_interet / this.paiement_mensuel / 12;
+      var result =
+        (this.cout_total_interet + this.cout_assurance_total) /
+        this.paiement_mensuel /
+        12;
       return result;
     },
   },
