@@ -4,7 +4,7 @@ const siteMetaInfo = {
   author_image: "/author.jpg",
   position: "🐍 Python/DevOps Software engineer 👨‍💻 ⌨️",
   position2: "✨ Mentor @Openclassroom DA Python 🐍",
-  position3: "💻 Formateur Java @CCI",
+  position3: "Pythonista | Open Source lover 🐍",
   location: "Paris",
   headerTitle: "Eddine OMAR",
   slogan: "Skills are cheap, Passion is priceless",
