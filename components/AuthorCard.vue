@@ -48,16 +48,6 @@
         <a :href="siteMetadata.github"> {{ siteMetadata.githubUser }}</a>
       </div>
       <div class="my-2 text-gray-600 flex dark:text-blue-200">
-        <CV class="mr-1" />
-        <a href="/CV/Eddine Omar CV.pdf" target="_blank" download="">CV - fr</a>
-      </div>
-      <div class="my-2 text-gray-600 flex dark:text-blue-200">
-        <CV class="mr-1" />
-        <a href="/CV/Eddine Omar CV 2024 - EN.pdf" target="_blank" download=""
-          >CV - en</a
-        >
-      </div>
-      <div class="my-2 text-gray-600 flex dark:text-blue-200">
         <div class="mr-1" />
         <a
           href="http://www.catb.org/~esr/faqs/hacker-howto.html"
