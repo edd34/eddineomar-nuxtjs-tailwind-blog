@@ -66,18 +66,31 @@ export default {
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-
+    loaders: {
+      sass: {
+        sassOptions: {
+          silenceDeprecations: ['legacy-js-api'],
+        },
+      },
+      scss: {
+        sassOptions: {
+          silenceDeprecations: ['legacy-js-api'],
+        },
+      },
+    },
     postcss: {
-      plugins: {
-        // "postcss-custom-properties": false,
-        // 'postcss-preset-env': {
-        //   features:
-        //   {
-        //     'custom-properties': false
-        //   }
-        // },
-        tailwindcss: {},
-        autoprefixer: {},
+      postcssOptions: {
+        plugins: {
+          // "postcss-custom-properties": false,
+          // 'postcss-preset-env': {
+          //   features:
+          //   {
+          //     'custom-properties': false
+          //   }
+          // },
+          tailwindcss: {},
+          autoprefixer: {},
+        },
       },
     },
   },

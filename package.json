@@ -2,6 +2,9 @@
   "name": "nuxt-blog",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=24.0.0"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -42,5 +45,15 @@
   "peerDependencies": {
     "postcss": "^8.5.33",
     "postcss-preset-env": "^7"
+  },
+  "resolutions": {
+    "vue": "2.7.16",
+    "vue-server-renderer": "2.7.16",
+    "vue-template-compiler": "2.7.16"
+  },
+  "overrides": {
+    "vue": "2.7.16",
+    "vue-server-renderer": "2.7.16",
+    "vue-template-compiler": "2.7.16"
   }
 }
